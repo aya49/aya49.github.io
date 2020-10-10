@@ -16,7 +16,19 @@ layout: default
         
   <section class="nodate">
     <h2>Publications</h2>
-
+    {% assign cp = site.categories.publications | sort | reverse %}
+    {% assign byYear = cp | group_by_exp:"post", "post.date | date: '%Y'" %}
+  {% for yearItem in byYear %}
+    <h4>{{ yearItem.name }}</h4>
+    <ul>
+      {% for post in yearItem.items %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="excerpt">{{ post.excerpt }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
   </section>
         
   <section>
@@ -63,8 +75,8 @@ layout: default
     <h2>Service</h2>
       <ul>
         <li>
-          <span class="date">2019</span>
-          <a href="#"><b>President</b>, Computing science graduate student association, SFU</a>
+          <span class="date">2017 - 2021</span>
+          <a href="#"><b>President</b> (past: VP of Finance, GSS councillor, TSSU steward), Computing science graduate student association, SFU</a>
           <span class="excerpt"><p>Sucessfully re-initiated and created administrative structure to an inactive caucus. Provided oversight, and organized social and academic events for the student body;</p> <p>e.g. general meetings, lunch social, facuty candidate seminar lunch, game night, logo contest, amenity cleaning socials, buddy program for new students.</p><p>Acted as the liason between the school, GSS (graduate student society), TSSU (union for TA & RA), and the student body.</p> </span>
       </li>
       <li>

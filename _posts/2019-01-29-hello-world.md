@@ -1,7 +1,8 @@
 ---
 title: "Welcome to Jekyll!"
 date: 2019-01-29
-categories: publications
+categories: 
+  - publications
 excerpt_separator: <!--more-->
 ---
 

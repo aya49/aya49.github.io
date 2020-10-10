@@ -1,7 +1,8 @@
 ---
 title: "Yue, Alice, et al. "Identifying differential cell populations in flow cytometry data accounting for marker frequency." BioRxiv (2019): 837765."
 date: 2020-09-30
-categories: publications
+categories: 
+  - publications
 excerpt_separator: <!--more-->
 ---
 
