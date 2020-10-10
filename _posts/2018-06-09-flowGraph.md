@@ -1,18 +1,17 @@
 ---
 title: "Yue, Alice, et al. 'Identifying differential cell populations in flow cytometry data accounting for marker frequency.' BioRxiv (2019): 837765."
+name: "Identifying maximal differential cellpopulations in flow cytometry data accounting for dependence between cell populations"
 date: 2020-09-30
 categories: 
   - publications
 excerpt_separator: <!--more-->
 ---
 
-## Identifying maximal differential cellpopulations in flow cytometry data accounting for dependence between cell populations
-
-Alice Yue, Cedric Chauve, Maxwell Libbrecht, Ryan Brinkman
-
-[Paper](#) [Github](#) [Poster](#) [Presentation](#)
+##### [[Paper]](#) [[Github]](#) [[Poster]](#) [[Presentation]](#)
 
 <!--more-->
+
+###### Alice Yue, Cedric Chauve, Maxwell Libbrecht, Ryan Brinkman
 
 We propose SpecEnr (specific enrichment), a cell population score that accounts for dependency between cell populations, and a method that harness SpecEnr properties to find candidate biomarkers for disease diagnosis in flow cytometry (FCM) data.
 
