@@ -1,11 +1,15 @@
 ---
 title: "Welcome to Jekyll!"
-published: false
+date: 2019-01-29
+categories: publications
+excerpt_separator: <!--more-->
 ---
 
 **Hello world**, this is my first Jekyll blog post.
 
 I hope you like it!
+
+<!--more-->
 
 # Highlighter
 ## Ruby
