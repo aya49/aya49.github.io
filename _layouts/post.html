@@ -1,16 +1,45 @@
-{% include header.html %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="utf-8" name="viewport" content="text/html" />
 
-{% include nav_post.html %}
+    <title>{{ page.title }}</title>
+
+  </head>
+
+  <body>
+
+    <div class="frame" id="navbar">
+
+        <nav>
+          <button class="tablinks" onclick="window.location.href='http://aya49.github.io';" id="defaultOpen">Home</button>
+          
+          <div id="indicator"></div>
+        </nav>
+        
+    </div>
     
-<div class="frame content">
-  <div class="framein tabcontent">
+    <div class="frame content">
+      <div class="framein tabcontent" id="home">
 
-    <section>
-      <h2>{{ page.title }}</h2>
-      {{ post_body }}
-    </section>
+        <section>
+          <h2>Service</h2>
+          <h5>subtitle</h5>
+          <h6><a>[link1]</a> <a>[link2]</a></h6>
+          <p>content</p>
+        </section>
 
-  </div>
-</div>
+    </div>
 
-{% include footer.html %}
+    </div>
+
+    <div class="frame" id="frame-foot">
+      <div class="framein" id="footer">
+        <p>This is the footer</p>
+      </div>
+    </div>
+
+    <script src="js/tabs_scroll.js" type="text/javascript"></script>
+  </body>
+</html>

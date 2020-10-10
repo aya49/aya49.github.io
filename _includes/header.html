@@ -1,19 +1,33 @@
-<div class="frame" id="frame-header">
-  <div class="framein" id="header">
+{% if site.style == 'dark' %}
+  {% assign icon_color = "#ffffff" %}
+{% else %}
+  {% assign icon_color = "#24292e" %}
+{% endif %}
 
-<!--
-<div style="border-radius: 50%; width: 152px; height: 152px; background: linear-gradient(45deg, #ce8d28, #f1faee, #ce8d28); margin: auto;">-->
-<img src="https://user-images.githubusercontent.com/22086811/95024954-0c0dcc00-063b-11eb-9d9f-a3d89e4fd43a.png" alt="profile picture" style="border-radius: 50%; width: 150px; height: 150px;"></div>
+{% assign content = page.content %}
 
-    <h1>Alice Yue</h1>
-      
-    <p>PhDC in computing science</p>
-      
-    <div class="social-links">
-      <a href="https://scholar-google-ca.proxy.lib.sfu.ca/citations?user=NeWJef4AAAAJ" title="Google scholar" target="_blank"><i class="fa fa-google"></i></a>
-      <a href="https://www.linkedin.com/in/aliceyue/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href="https://github.com/aya49/" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-    </div>
+{% assign posts_total = site.posts | size %}
 
-  </div>
-</div>
+{% assign user = site.github.owner %}
+
+{% if page.path contains '_posts' %}
+  {% assign page_title = page.title %}
+  {% assign meta_description = page.content | strip_html | strip_newlines | xml_escape | truncate: 300 %}
+{% else %}
+  {% assign page_title = user.name %}
+  {% assign meta_description = user.bio | strip_html | strip_newlines | xml_escape | truncate: 300 %}
+{% endif %}
+
+<!doctype html>
+<html class="min-height-full">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ meta_description }}" />
+    <meta property="og:title" content="{{ user.name }}" />
+    <meta property="og:image" content="{{ user.avatar_url }}" />
+    <meta property="og:description" content="{{ meta_description }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
+  </head>
+  <body class="bg-white min-height-full" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
