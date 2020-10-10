@@ -1,55 +1,149 @@
-{% include header.html %}
+---
+layout: default
+---
 
-{% if site.layout == 'stacked' %}
-  <div class="container-lg py-6 p-responsive text-center">
-    {% include masthead.html metadata=true %}
+{% include nav_home.html %}
+    
+<div class="framein tabcontent" id="home">
 
-    <div {% if site.style == 'dark' %}class="text-white"{% endif %}>
-      {{ content }}
-    </div>
+  <section id="about">
+    <p>
+      Hi! I am a PhD candidate in the department of computing science at SFU (CGPA: 4.33/4.33) under the supervision of 
+      <a href="https://cchauve.github.io/index.html"><span>Cedric Chauve</span></a>, <a href="https://www2.cs.sfu.ca/~maxwl/"><span>Maxwell Libbrecht</span></a>, and <a href="https://www.bccrc.ca/dept/tfl/people/ryan-brinkman"><span>Ryan Brinkman</span></a>. Previously, I recieved my MSc at SFU and my BSc with distinction at UVic (CGPA:8.7/9.0) in the beautiful city of Victoria.
+    </p>
+    <p>
+      <b>Research interests</b>: I develop <b>machine learning</b>, <b>data mining</b>, and <b>statistical analysis</b> methods for high-dimensional and graph structured data. In <b>bioinformatics</b>, I have applied my methods on flow cytometry, scRNAseq, and DNA sequence data.
+    </p>
+      
+    </section>
+        
+    <section class="nodate">
+      <h2>Publications</h2>
+        
+      <!--{% assign cp = site.tags.linux | sort | reverse %}
+      {% assign byYear = cp | group_by_exp:"post", "post.date | date: '%Y'" %}
+      {% for yearItem in byYear %}
+      <h4>{{ yearItem.name }}</h4>
+        <ul>
+          {% for post in yearItem.items %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="excerpt">{{ post.excerpt }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      {% endfor %}-->
+      
+    </section>
+      
+    <section>
+      <h2>Paper review</h2>
+      <p><b>Reviewed papers for</b>: ACM (2018), ISMB (2019, 2020), Neurips (2020), Oxford Bioinformatics (2016, 2020), and RECOMB (2020)</p>
+      <p><b>Committe member for</b>: MLCB (2019)</p>
+    </section>
 
-    <div class="my-6">
+  </div>
+    
+  <div id="projects" class="framein tabcontent">
+
+    <section>
       {% include projects.html %}
-    </div>
+    </section>
 
-    {% if site.topics %}
-      <div class="my-6">
-        {% include interests.html %}
-      </div>
-    {% endif %}
-
-    {% unless posts_total == 0 %}
-      <div class="my-6">
-        {% include thoughts.html %}
-      </div>
-    {% endunless %}
   </div>
-{% else %}
-  <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
-    <div class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light bg-white{% endif %} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">
-      {% include masthead.html metadata=true %}
-    </div>
+        
+  <div id="service" class="framein tabcontent">
+        
+    <section id="awards">
+      <h2>Teaching</h2>
+      <div class="rectangle"></div>
+      <p>Teaching assistant for: CMPT 105 (technical writing), 120 (introduction to computing science), and 125 (data structures).
+      </p>
+      <p>Part of the pilot program for the first ISG (instructional support group) model for online post-secondary education at SFU.</p>
+    </section>
+        
+    <section>
+      <h2>Scholarships and awards</h2>
+      <div class="rectangle"></div>
+      <ul>
+        <li>
+          <span class="date">2015 - 2021</span>
+          <span>CS Fellowship, SFU</span>
+        </li>
+        <li>
+          <span class="date">2017 - 2020</span>
+          <span>Canada Graduate Scholarships PGS-D, NSERC</span>
+        </li>
+        <li>
+          <span class="date">2019</span>
+          <span>DBMiner Award, SFU</span>
+        </li>
+        <li>
+          <span class="date">2016</span>
+          <span>Canada Graduate Scholarships MSc Program, NSERC</span>
+        </li>
+        <li>
+          <span class="date">2015</span>
+          <span>MADD-Gen MSc fellowship, SFU, NSERC</span>
+        </li>
+        <li>
+          <span class="date">2014</span>
+          <span>Audrey May McCormick Scholarship, UVic</span>
+        </li>
+        <li>
+          <span class="date">2013, 2014</span>
+          <span>Mrs Annie Greskiw Scholarship, UVic</span>
+        </li>
+        <li>
+          <span class="date">2012 - 2015</span>
+          <span>UVic Excellence Scholarship, UVic</span>
+        </li>
+        <li>
+          <span class="date">2012, 2013</span>
+          <span>Dr Ken and Barbara Thornton Memorial Award, UVic</span>
+        </li>
+        <li>
+          <span class="date">2012</span>
+          <span>Steven A Huesing Memorial Entrance Scholarship, UVic</span>
+        </li>
+        <li>
+          <span class="date">2012</span>
+          <span>Governor General Academic Medal, Chancellery of Honours, Canada</span>
+        </li>
+        <li>
+          <span class="date">2012</span>
+          <span>Coast Capital Standing Tall Award</span>
+        </li>
+        <li>
+          <span class="date">2012</span>
+          <span>Johnson Inc Sky's the Limit Scholarship</span>
+        </li>
+        <li>
+          <span class="date">2010 - 2012</span>
+          <span>Service Award with Distinction, Byrne Creek</span>
+        </li>
+        <li>
+          <span class="date">2011</span>
+          <span>National AP Scholar (Canada)</span>
+        </li>
+      </ul>
+    </section>
 
-    <div class="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
-      <div class="mx-auto" style="max-width: 900px;">
-        {% unless content == ""  %}
-          <div class="f4 {% if site.style == 'dark' %}text-white{% endif %} mb-6">
-            {{ content }}
-          </div>
-        {% endunless %}
+    <section>
+      <h2>Service</h2>
+      <div class="rectangle"></div>
+      <ul>
+        <li>
+          <span class="date">2019</span>
+          <a href="#"><b>President</b>, Computing science graduate student association, SFU</a>
+          <span class="excerpt"><p>Sucessfully re-initiated and created administrative structure to an inactive caucus. Provided oversight, and organized social and academic events for the student body;</p> <p>e.g. general meetings, lunch social, facuty candidate seminar lunch, game night, logo contest, amenity cleaning socials, buddy program for new students.</p><p>Acted as the liason between the school, GSS (graduate student society), TSSU (union for TA & RA), and the student body.</p> </span>
+      </li>
+      <li>
+        <span class="date">2018, 2019</span>
+        <a href="#"><b>Mentor</b>, AI4All Invent the Future Scholars Program SFU</a>
+        <span class="excerpt"><p>Mentored and created projects for the bioinformatics group during the first and second annual summer enrichment program for high school girls in Canada.</p> <p>Github repositories: <a href="https://github.com/aya49/ai4all2018_bio">[2018]</a>, <a href="https://github.com/aya49/ai4all2019_bio">[2019]</a>.</p></span>
+      </li>
+    </ul>
+  </section>
 
-        {% include projects.html %}
-
-        {% if site.topics %}
-          {% include interests.html %}
-        {% endif %}
-
-        {% unless posts_total == 0 %}
-          {% include thoughts.html %}
-        {% endunless %}
-      </div>
-    </div>
-  </div>
-{% endif %}
-
-{% include footer.html %}
+</div>
