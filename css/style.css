@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Norican&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Alice', serif;
+  font-size: 15px;
+  color: #f4f3f0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+/* font */
+p, a, span {
+  font-size: 16px;
+  padding-top: 0;
+}
+
+a {
+  color: #E99C7B;
+  transition: 0.2s ease color;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #B7DCDB;
+}
+
+body, #navbar {
+  background-color: #000F14;
+}
+
+h1, h2, h5, h6, img {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 5px;
+  margin-top: 0;
+  font-size: 40px;
+  font-family: 'Norican', cursive;
+}
+
+#frame-header p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  color: #f4f3f0;
+  padding-bottom: 70px;
+  background-image: url('https://user-images.githubusercontent.com/22086811/95152861-e4099000-0742-11eb-83a0-7469f9f4b82c.png');
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: center bottom;
+}
+
+
+
+
+/* layout */
+.frame {
+  width: 100%;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.framein {
+  max-width: 700px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  height: auto;
+  background-color: white;
+}
+
+.tabcontent {
+  padding: 50px;
+  padding-top: 50px;
+  background-color: #000F14;
+  /* background: linear-gradient(32deg, rgba(0,31,41,1) 0%, rgba(0,46,61,1) 66%, rgba(0,77,102,1) 100%);
+  -webkit-box-shadow: 0px 21px 19px -12px rgba(0,0,0,0.68);
+-moz-box-shadow: 0px 21px 19px -12px rgba(0,0,0,0.68);
+box-shadow: 0px 21px 19px -12px rgba(0,0,0,0.68); */
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media only screen and (max-width: 600px) {
+  .framein, .tabcontent {
+    padding: 30px;
+    padding-top: 50px;
+  }
+}
+
+section {
+  padding-bottom: 30px;
+}
+
+#frame-header {
+  background-image: url('https://user-images.githubusercontent.com/22086811/95151183-d9e59280-073e-11eb-9eae-0a27e61ea80a.png'); 
+  /* url('https://user-images.githubusercontent.com/22086811/95024948-04e6be00-063b-11eb-9826-098eb0afaa8f.png'); */
+  background-position: center top;
+  background-size: 650px;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  padding-bottom: 40px;
+}
+
+#header {
+  text-align: center;
+  color: #f7e9b5;
+  background: none;
+  border: none;
+  margin: auto;
+  padding: 0;
+  padding-top: 20px;
+}
+
+#frame-foot {
+  background-image: url('https://user-images.githubusercontent.com/22086811/95151190-e10ca080-073e-11eb-9dd9-a91b5c6bdfdb.png'); 
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 650px;
+  padding-top: 280px;
+}
+
+
+/* social links by sazzad */
+.social-links{
+  font-size: 14px;
+  text-align: center;
+}
+.social-links a {
+  width: 25px;
+  height: 25px;
+  line-height: 25px !important;
+  position: relative;
+  margin: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: inline-block;
+  color: #f4f3f0;
+
+  -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+.social-links a i,
+.social-links a span{
+  position: relative;
+  top: 2px;
+  left: 1px;
+}
+.social-links a:before{
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #f4f3f0;
+
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+
+}
+.social-links a:hover{
+  color: #000F14;
+}
+.social-links a:hover:before{
+  background: #f4f3f0;
+}
+
+
+/* navigation */
+nav {
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav button {
+  font-size: 14px;
+  color: #E99C7B;
+  padding: auto;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s ease color;
+  background-color: transparent;
+}
+
+nav button:hover,
+nav button.active {
+  color: #f4f3f0;
+}
+
+#indicator {
+ position: relative;
+    left: 10px;
+    bottom: 3px;
+    width: 90px;
+    height: 3px;
+    background-color: none;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+nav button.active ~ #indicator {
+  background-color: #f4f3f0;
+}
+nav button:nth-child(1).active ~ #indicator {
+  left: 5px;
+}
+nav button:nth-child(2).active ~ #indicator {
+  left: 105px;
+}
+nav button:nth-child(3).active ~ #indicator {
+  left: 205px;
+}
+
+/* sticky class > navbar when scroll to top */
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+/* blog post fonts */
+h4 { /* small section header; date */
+  color: #83C3C1;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/* lists */
+ul {
+  list-style: none;
+  padding-left: 95px;
+  position: relative;
+  text-size: 10px;
+}
+
+.nodate ul {
+  padding-left: 20px;
+}
+
+ul li {
+  padding-top: 5px;
+}
+
+ul li .excerpt {
+  position: relative;
+  display: block;
+  left: 10px;
+  bottom: 3px;
+}
+
+ul li .date {
+  position: relative;
+  display: inline;
+  float: right;
+  top: 0;
+  padding-right: 15px;
+  right: 100%;
+  width: 80px;
+  color: #83C3C1;
+  text-align: right;
+}
+
+
+h5 { /* subtitle */
+  font-size: 15px;
+  color: #83C3C1;
+}
+
+
+
+#footer {
+  background: none;
+  text-align: center;
+}
