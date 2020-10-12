@@ -1,8 +1,62 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="text/html" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link href="/css/style_other.css" rel="stylesheet" type="text/css">-->
+    <link href="/css/github.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
 
-{% include nav_home.html %}
+    <!-- 
+      Credits:
+      - leaf background by BiZkettE1 \ freepik
+      - github projects api from https://github.com/github/personal-website
+    -->
+
+    <title></title>
+  </head>
+
+  <body>
+
+  <button onclick="topFunction()" id="topbtn" title="Go to top"><i class="fa fa-chevron-up"></i></button> 
+
+
+
+<div class="frame" id="frame-header">
+  <div class="framein" id="header">
+
+<!--
+<div style="border-radius: 50%; width: 152px; height: 152px; background: linear-gradient(45deg, #ce8d28, #f1faee, #ce8d28); margin: auto;">-->
+<a href="/"><img src="https://avatars3.githubusercontent.com/u/22086811?v=4" alt="profile picture" style="border-radius: 50%; width: 150px; height: 150px;"></a></div>
+
+    <h1>Alice Yue</h1>
+      
+    <p>PhDC in computing science</p>
+      
+    <div class="social-links">
+      <a href="https://scholar-google-ca.proxy.lib.sfu.ca/citations?user=NeWJef4AAAAJ" title="Google scholar" target="_blank"><i class="fa fa-google"></i></a>
+      <a href="https://www.linkedin.com/in/aliceyue/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/aya49/" title="Github" target="_blank"><i class="fa fa-github"></i></a>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="frame" id="navbar">
+
+  <nav>
+    <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Home</button>
+    <button class="tablinks" onclick="openCity(event, 'projects')">Projects</button>
+    <button class="tablinks" onclick="openCity(event, 'service')">Service</button>
+    <div id="indicator"></div>
+  </nav>
+        
+</div>
+
+<div class="frame content">
+
 
 <div class="framein tabcontent" id="home">
   <section id="about">
@@ -16,7 +70,250 @@ layout: default
         
   <section class="nodate">
     <h2>Publications</h2>
-    {% bibliography %}
+    <ol class="bibliography"><li><div class="text-justify"><span id="abeler2020high">Abeler-Dörner, Lucie, et al. “High-Throughput Phenotyping Reveals Expansive Genetic and Structural Underpinnings of Immune Variation.” <i>Nature Immunology</i>, vol. 21, no. 1, Nature Publishing Group, 2020, pp. 86–100.</span></div>
+
+<button class="button b0"  onclick="toggleBibtexabeler2020high()">Bibtex</button>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<div id="aabeler2020high" style="display: none;">
+<pre>@article{abeler2020high,
+  title = {High-throughput phenotyping reveals expansive genetic and structural underpinnings of immune variation},
+  author = {Abeler-D{\"o}rner, Lucie and Laing, Adam G and Lorenc, Anna and Ushakov, Dmitry S and Clare, Simon and Speak, Anneliese O and Duque-Correa, Maria A and White, Jacqueline K and Ramirez-Solis, Ramiro and Saran, Namita and others},
+  journal = {Nature Immunology},
+  volume = {21},
+  number = {1},
+  pages = {86--100},
+  year = {2020},
+  publisher = {Nature Publishing Group}
+}
+</pre>
+</div>
+<script>
+function toggleBibtexabeler2020high(parameter) {
+    var x= document.getElementById('aabeler2020high');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script></li>
+<li><div class="text-justify"><span id="yue2019identifying">Yue, Alice, et al. “Identifying Differential Cell Populations in Flow Cytometry Data Accounting for Marker Frequency.” <i>BioRxiv</i>, Cold Spring Harbor Laboratory, 2019, p. 837765, doi:10.1101/837765.</span></div>
+
+<button class="button b0"  onclick="toggleBibtexyue2019identifying()">Bibtex</button>
+
+
+    <a href="http://doi.org/10.1101/837765"><input class="button b1" type="button" value="doi" /></a>
+
+
+
+
+
+    <a href="https://docs.google.com/presentation/d/1rocCQnFISWXx0JLVCTAxb0YNOcIpmvUq3RPiM_TNoV4/edit?usp=sharing" target="_blank"><input class="button b1" type="button" value="slides" /></a>
+
+ 
+
+    <a href="https://docs.google.com/presentation/d/1o03ZqVq690-gHAB8AbWMNKWDvMKUYOocEHustEmZMNM/edit?usp=sharing" target="_blank"><input class="button b1" type="button" value="poster" /></a>
+
+
+
+    <a href="/2020/09/30/flowGraph/" target="_blank"><input class="button b2" type="button" value="website" /></a>
+
+
+
+    <a href="https://github.com/aya49/flowGraph" target="_blank"><input class="button b2" type="button" value="code" /></a>
+
+
+<div id="ayue2019identifying" style="display: none;">
+<pre>@article{yue2019identifying,
+  title = {Identifying differential cell populations in flow cytometry data accounting for marker frequency},
+  author = {Yue, Alice and Chauve, Cedric and Libbrecht, Maxwell and Brinkman, Ryan},
+  journal = {BioRxiv},
+  pages = {837765},
+  year = {2019},
+  publisher = {Cold Spring Harbor Laboratory},
+  website = {/2020/09/30/flowGraph/},
+  doi = {10.1101/837765},
+  code = {https://github.com/aya49/flowGraph},
+  slides = {https://docs.google.com/presentation/d/1rocCQnFISWXx0JLVCTAxb0YNOcIpmvUq3RPiM_TNoV4/edit?usp=sharing},
+  poster = {https://docs.google.com/presentation/d/1o03ZqVq690-gHAB8AbWMNKWDvMKUYOocEHustEmZMNM/edit?usp=sharing}
+}
+</pre>
+</div>
+<script>
+function toggleBibtexyue2019identifying(parameter) {
+    var x= document.getElementById('ayue2019identifying');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script></li>
+<li><div class="text-justify"><span id="cossarizza2019guidelines">Cossarizza, Andrea, et al. “Guidelines for the Use of Flow Cytometry and Cell Sorting in Immunological Studies.” <i>European Journal of Immunology</i>, vol. 49, no. 10, Wiley Online Library, 2019, pp. 1457–973.</span></div>
+
+<button class="button b0"  onclick="toggleBibtexcossarizza2019guidelines()">Bibtex</button>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<div id="acossarizza2019guidelines" style="display: none;">
+<pre>@article{cossarizza2019guidelines,
+  title = {Guidelines for the use of flow cytometry and cell sorting in immunological studies},
+  author = {Cossarizza, Andrea and Chang, Hyun-Dong and Radbruch, Andreas and Acs, Andreas and Adam, Dieter and Adam-Klages, Sabine and Agace, William W and Aghaeepour, Nima and Akdis, M{\"u}beccel and Allez, Matthieu and others},
+  journal = {European journal of immunology},
+  volume = {49},
+  number = {10},
+  pages = {1457--1973},
+  year = {2019},
+  publisher = {Wiley Online Library}
+}
+</pre>
+</div>
+<script>
+function toggleBibtexcossarizza2019guidelines(parameter) {
+    var x= document.getElementById('acossarizza2019guidelines');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script></li>
+<li><div class="text-justify"><span id="rajasekaran2019cholinergic">Rajasekaran, Ashwini, et al. “Cholinergic Synapse Pathway Gene Polymorphisms Associated with Allergen-Induced Late Asthmatic Responses.” <i>ERJ Open Research</i>, vol. 5, no. 4, Eur Respiratory Soc, 2019.</span></div>
+
+<button class="button b0"  onclick="toggleBibtexrajasekaran2019cholinergic()">Bibtex</button>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<div id="arajasekaran2019cholinergic" style="display: none;">
+<pre>@article{rajasekaran2019cholinergic,
+  title = {Cholinergic synapse pathway gene polymorphisms associated with allergen-induced late asthmatic responses},
+  author = {Rajasekaran, Ashwini and He, Daniel and Yue, Alice and Singh, Amrit and Shannon, Casey P and FitzGerald, J Mark and Boulet, Louis-Philippe and O'Byrne, Paul M and Gauvreau, Gail M and Tebbutt, Scott J},
+  journal = {ERJ open research},
+  volume = {5},
+  number = {4},
+  year = {2019},
+  publisher = {Eur Respiratory Soc}
+}
+</pre>
+</div>
+<script>
+function toggleBibtexrajasekaran2019cholinergic(parameter) {
+    var x= document.getElementById('arajasekaran2019cholinergic');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script></li>
+<li><div class="text-justify"><span id="rahim2018high">Rahim, Albina, et al. “High Throughput Automated Analysis of Big Flow Cytometry Data.” <i>Methods</i>, vol. 134, Elsevier, 2018, pp. 164–76.</span></div>
+
+<button class="button b0"  onclick="toggleBibtexrahim2018high()">Bibtex</button>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<div id="arahim2018high" style="display: none;">
+<pre>@article{rahim2018high,
+  title = {High throughput automated analysis of big flow cytometry data},
+  author = {Rahim, Albina and Meskas, Justin and Drissler, Sibyl and Yue, Alice and Lorenc, Anna and Laing, Adam and Saran, Namita and White, Jacqui and Abeler-D{\"o}rner, Lucie and Hayday, Adrian and others},
+  journal = {Methods},
+  volume = {134},
+  pages = {164--176},
+  year = {2018},
+  publisher = {Elsevier}
+}
+</pre>
+</div>
+<script>
+function toggleBibtexrahim2018high(parameter) {
+    var x= document.getElementById('arahim2018high');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script></li>
+<li><div class="text-justify"><span id="yue2017feature">Yue, Alice. <i>Feature-Based Comparison of Flow Cytometry Data</i>. Applied Sciences: School of Computing Science, 2017.</span></div>
+
+<button class="button b0"  onclick="toggleBibtexyue2017feature()">Bibtex</button>
+
+
+
+
+    <a href="http://summit.sfu.ca/system/files/iritems1/17604/etd10296_AYue.pdf" target="_blank"><input class="button b1" type="button" value="pdf" /></a>
+
+
+
+ 
+
+
+
+
+
+
+<div id="ayue2017feature" style="display: none;">
+<pre>@phdthesis{yue2017feature,
+  title = {Feature-based Comparison of Flow Cytometry Data},
+  author = {Yue, Alice},
+  year = {2017},
+  school = {Applied Sciences: School of Computing Science},
+  pdf = {http://summit.sfu.ca/system/files/iritems1/17604/etd10296_AYue.pdf}
+}
+</pre>
+</div>
+<script>
+function toggleBibtexyue2017feature(parameter) {
+    var x= document.getElementById('ayue2017feature');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script></li></ol>
   </section>
         
   <section>
@@ -31,7 +328,486 @@ layout: default
 
   <section>
     <h2>Github repositories</h2>
-    {% include projects.html %}
+    <div class="d-sm-flex flex-wrap gutter-condensed mb-4">
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div class="github-component d-flex flex-column flex-justify-between height-full text-left box-shadow rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h3 class="ghtitle f4 lh-condensed mb-1">
+        <a href="https://github.com/aya49/flowGraph">
+          <svg height="20" class="octicon octicon-repo mr-1 v-align-middle" fill="#586069" aria-label="repo" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+          flowGraph
+        </a>
+      </h3>
+    </div>
+    <div class="ghdescript mb-2 ws-normal">
+      Accurately selects cell populations features that differentiate between flow cytometry sample classes by removing top-down dependency between features modelled on a lattice.
+    </div>
+  </div>
+  <!--
+  <div class="d-flex f6">
+    
+        <span class="repo-language-color ml-0 mr-1" style="background-color:#198CE7"></span>
+        <span class="mr-3" itemprop="programmingLanguage">R</span>
+    
+    
+      <a href="https://github.com/aya49/flowGraph/stargazers" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>0
+      </a>
+    
+    
+      <a href="https://github.com/aya49/flowGraph/network/members" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-git-branch mr-1" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>0
+      </a>
+    
+  </div>
+  -->
+</div>
+
+      </div>
+    
+  
+    
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div class="github-component d-flex flex-column flex-justify-between height-full text-left box-shadow rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h3 class="ghtitle f4 lh-condensed mb-1">
+        <a href="https://github.com/aya49/omics_asthma">
+          <svg height="20" class="octicon octicon-repo octicon octicon-repo mr-1 v-align-middle" fill="#586069" aria-label="repo" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+          omics_asthma
+        </a>
+      </h3>
+    </div>
+    <div class="ghdescript mb-2 ws-normal">
+      Analysis of blood-based omics data to identify biomarkers related to early and dual asthmatic response.
+    </div>
+  </div>
+  <!--
+  <div class="d-flex f6">
+    
+        <span class="repo-language-color ml-0 mr-1" style="background-color:#e34c26"></span>
+        <span class="mr-3" itemprop="programmingLanguage">HTML</span>
+    
+    
+      <a href="https://github.com/aya49/omics_asthma/stargazers" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>0
+      </a>
+    
+    
+      <a href="https://github.com/aya49/omics_asthma/network/members" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-git-branch mr-1" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>0
+      </a>
+    
+  </div>
+  -->
+</div>
+
+      </div>
+    
+  
+    
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div class="github-component d-flex flex-column flex-justify-between height-full text-left box-shadow rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h3 class="ghtitle f4 lh-condensed mb-1">
+        <a href="https://github.com/aya49/ggplot_igraph">
+          <svg height="20" class="octicon octicon-repo octicon octicon-repo octicon octicon-repo mr-1 v-align-middle" fill="#586069" aria-label="repo" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+          ggplot_igraph
+        </a>
+      </h3>
+    </div>
+    <div class="ghdescript mb-2 ws-normal">
+      An R script that uses igraph layouts to plot pretty graphs with ggplot2.
+    </div>
+  </div>
+  <!--
+  <div class="d-flex f6">
+    
+        <span class="repo-language-color ml-0 mr-1" style="background-color:#198CE7"></span>
+        <span class="mr-3" itemprop="programmingLanguage">R</span>
+    
+    
+      <a href="https://github.com/aya49/ggplot_igraph/stargazers" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>1
+      </a>
+    
+    
+      <a href="https://github.com/aya49/ggplot_igraph/network/members" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-git-branch mr-1" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>0
+      </a>
+    
+  </div>
+  -->
+</div>
+
+      </div>
+    
+  
+    
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div class="github-component d-flex flex-column flex-justify-between height-full text-left box-shadow rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h3 class="ghtitle f4 lh-condensed mb-1">
+        <a href="https://github.com/aya49/flowtype_biclustering">
+          <svg height="20" class="octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo mr-1 v-align-middle" fill="#586069" aria-label="repo" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+          flowtype_biclustering
+        </a>
+      </h3>
+    </div>
+    <div class="ghdescript mb-2 ws-normal">
+      A pipeline for extracting features from and biclustering flow cytometry data
+    </div>
+  </div>
+  <!--
+  <div class="d-flex f6">
+    
+        <span class="repo-language-color ml-0 mr-1" style="background-color:#198CE7"></span>
+        <span class="mr-3" itemprop="programmingLanguage">R</span>
+    
+    
+      <a href="https://github.com/aya49/flowtype_biclustering/stargazers" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>0
+      </a>
+    
+    
+      <a href="https://github.com/aya49/flowtype_biclustering/network/members" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-git-branch mr-1" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>0
+      </a>
+    
+  </div>
+  -->
+</div>
+
+      </div>
+    
+  
+    
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div class="github-component d-flex flex-column flex-justify-between height-full text-left box-shadow rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h3 class="ghtitle f4 lh-condensed mb-1">
+        <a href="https://github.com/aya49/ai4all2019_bio">
+          <svg height="20" class="octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo mr-1 v-align-middle" fill="#586069" aria-label="repo" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+          ai4all2019_bio
+        </a>
+      </h3>
+    </div>
+    <div class="ghdescript mb-2 ws-normal">
+      Uses RNAseq data and various feature extraction & machine learning algorithms to predict human gestational age.
+    </div>
+  </div>
+  <!--
+  <div class="d-flex f6">
+    
+        <span class="repo-language-color ml-0 mr-1" style="background-color:#e34c26"></span>
+        <span class="mr-3" itemprop="programmingLanguage">HTML</span>
+    
+    
+      <a href="https://github.com/aya49/ai4all2019_bio/stargazers" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>0
+      </a>
+    
+    
+      <a href="https://github.com/aya49/ai4all2019_bio/network/members" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-git-branch mr-1" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>0
+      </a>
+    
+  </div>
+  -->
+</div>
+
+      </div>
+    
+  
+    
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div class="github-component d-flex flex-column flex-justify-between height-full text-left box-shadow rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h3 class="ghtitle f4 lh-condensed mb-1">
+        <a href="https://github.com/aya49/fingerprint_liveness">
+          <svg height="20" class="octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo mr-1 v-align-middle" fill="#586069" aria-label="repo" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+          fingerprint_liveness
+        </a>
+      </h3>
+    </div>
+    <div class="ghdescript mb-2 ws-normal">
+      Compares several different machine learning models and statistical features to predict the liveness of the fingerprint biometric.
+    </div>
+  </div>
+  <!--
+  <div class="d-flex f6">
+    
+        <span class="repo-language-color ml-0 mr-1" style="background-color:#3572A5"></span>
+        <span class="mr-3" itemprop="programmingLanguage">Python</span>
+    
+    
+      <a href="https://github.com/aya49/fingerprint_liveness/stargazers" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>13
+      </a>
+    
+    
+      <a href="https://github.com/aya49/fingerprint_liveness/network/members" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-git-branch mr-1" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>9
+      </a>
+    
+  </div>
+  -->
+</div>
+
+      </div>
+    
+  
+    
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div class="github-component d-flex flex-column flex-justify-between height-full text-left box-shadow rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h3 class="ghtitle f4 lh-condensed mb-1">
+        <a href="https://github.com/aya49/ai4all2018_bio">
+          <svg height="20" class="octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo mr-1 v-align-middle" fill="#586069" aria-label="repo" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+          ai4all2018_bio
+        </a>
+      </h3>
+    </div>
+    <div class="ghdescript mb-2 ws-normal">
+      Infers the infection pathway of the influenza virus using various sequence and tree statistics: created for the bioinformatics project @ 2018 invent the future, SFU
+    </div>
+  </div>
+  <!--
+  <div class="d-flex f6">
+    
+        <span class="repo-language-color ml-0 mr-1" style="background-color:#e34c26"></span>
+        <span class="mr-3" itemprop="programmingLanguage">HTML</span>
+    
+    
+      <a href="https://github.com/aya49/ai4all2018_bio/stargazers" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>0
+      </a>
+    
+    
+      <a href="https://github.com/aya49/ai4all2018_bio/network/members" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-git-branch mr-1" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>0
+      </a>
+    
+  </div>
+  -->
+</div>
+
+      </div>
+    
+  
+    
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div class="github-component d-flex flex-column flex-justify-between height-full text-left box-shadow rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h3 class="ghtitle f4 lh-condensed mb-1">
+        <a href="https://github.com/aya49/salmonoid_phylogeny">
+          <svg height="20" class="octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo mr-1 v-align-middle" fill="#586069" aria-label="repo" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+          salmonoid_phylogeny
+        </a>
+      </h3>
+    </div>
+    <div class="ghdescript mb-2 ws-normal">
+      Uses Bayesian phylogenetic inference and graph-based tree shape algorithms to build separate and consolidated ancestral trees of salmonoid fish
+    </div>
+  </div>
+  <!--
+  <div class="d-flex f6">
+    
+        <span class="repo-language-color ml-0 mr-1" style="background-color:#3572A5"></span>
+        <span class="mr-3" itemprop="programmingLanguage">Python</span>
+    
+    
+      <a href="https://github.com/aya49/salmonoid_phylogeny/stargazers" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>0
+      </a>
+    
+    
+      <a href="https://github.com/aya49/salmonoid_phylogeny/network/members" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-git-branch mr-1" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>0
+      </a>
+    
+  </div>
+  -->
+</div>
+
+      </div>
+    
+  
+    
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div class="github-component d-flex flex-column flex-justify-between height-full text-left box-shadow rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h3 class="ghtitle f4 lh-condensed mb-1">
+        <a href="https://github.com/aya49/flowtype_flowcap">
+          <svg height="20" class="octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo mr-1 v-align-middle" fill="#586069" aria-label="repo" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+          flowtype_flowcap
+        </a>
+      </h3>
+    </div>
+    <div class="ghdescript mb-2 ws-normal">
+      Uses feature engineering to compare and cluster hierarchical FCS data
+    </div>
+  </div>
+  <!--
+  <div class="d-flex f6">
+    
+        <span class="repo-language-color ml-0 mr-1" style="background-color:#198CE7"></span>
+        <span class="mr-3" itemprop="programmingLanguage">R</span>
+    
+    
+      <a href="https://github.com/aya49/flowtype_flowcap/stargazers" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>0
+      </a>
+    
+    
+      <a href="https://github.com/aya49/flowtype_flowcap/network/members" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-git-branch mr-1" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>0
+      </a>
+    
+  </div>
+  -->
+</div>
+
+      </div>
+    
+  
+    
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div class="github-component d-flex flex-column flex-justify-between height-full text-left box-shadow rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h3 class="ghtitle f4 lh-condensed mb-1">
+        <a href="https://github.com/aya49/common_gateway">
+          <svg height="20" class="octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo mr-1 v-align-middle" fill="#586069" aria-label="repo" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+          common_gateway
+        </a>
+      </h3>
+    </div>
+    <div class="ghdescript mb-2 ws-normal">
+      Implements an interface between relational databases and XML framework built on a common gateway model to convert pharmaceutical data between medical facilities
+    </div>
+  </div>
+  <!--
+  <div class="d-flex f6">
+    
+        <span class="repo-language-color ml-0 mr-1" style="background-color:#e34c26"></span>
+        <span class="mr-3" itemprop="programmingLanguage">HTML</span>
+    
+    
+      <a href="https://github.com/aya49/common_gateway/stargazers" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>0
+      </a>
+    
+    
+      <a href="https://github.com/aya49/common_gateway/network/members" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-git-branch mr-1" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>0
+      </a>
+    
+  </div>
+  -->
+</div>
+
+      </div>
+    
+  
+    
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div class="github-component d-flex flex-column flex-justify-between height-full text-left box-shadow rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h3 class="ghtitle f4 lh-condensed mb-1">
+        <a href="https://github.com/aya49/word_prediction">
+          <svg height="20" class="octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo mr-1 v-align-middle" fill="#586069" aria-label="repo" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+          word_prediction
+        </a>
+      </h3>
+    </div>
+    <div class="ghdescript mb-2 ws-normal">
+      learns and predicts in an unsupervised manner, missing words given a list of anonymized and corrupted text articles
+    </div>
+  </div>
+  <!--
+  <div class="d-flex f6">
+    
+        <span class="repo-language-color ml-0 mr-1" style="background-color:#198CE7"></span>
+        <span class="mr-3" itemprop="programmingLanguage">R</span>
+    
+    
+      <a href="https://github.com/aya49/word_prediction/stargazers" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>0
+      </a>
+    
+    
+      <a href="https://github.com/aya49/word_prediction/network/members" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-git-branch mr-1" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>0
+      </a>
+    
+  </div>
+  -->
+</div>
+
+      </div>
+    
+  
+    
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        <div class="github-component d-flex flex-column flex-justify-between height-full text-left box-shadow rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h3 class="ghtitle f4 lh-condensed mb-1">
+        <a href="https://github.com/aya49/med_info_system">
+          <svg height="20" class="octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo mr-1 v-align-middle" fill="#586069" aria-label="repo" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+          med_info_system
+        </a>
+      </h3>
+    </div>
+    <div class="ghdescript mb-2 ws-normal">
+      Implements a PL/SQL-based database and medical information management system; also contains the HCI and relational database EML model designs
+    </div>
+  </div>
+  <!--
+  <div class="d-flex f6">
+    
+        <span class="repo-language-color ml-0 mr-1" style="background-color:#dad8d8"></span>
+        <span class="mr-3" itemprop="programmingLanguage">PLSQL</span>
+    
+    
+      <a href="https://github.com/aya49/med_info_system/stargazers" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>0
+      </a>
+    
+    
+      <a href="https://github.com/aya49/med_info_system/network/members" class="d-inline-block link-gray mr-4">
+        <svg class="octicon octicon-git-branch mr-1" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>0
+      </a>
+    
+  </div>
+  -->
+</div>
+
+      </div>
+    
+  
+</div>
+
   </section>
 
 </div>
@@ -51,12 +827,82 @@ layout: default
   <section>
     <h2>Scholarships and awards</h2>
     <ul>
-      {% for awards in site.data.awards %}
+      
       <li>
-        <span class="date">{{ awards.time }}</span>
-        <span>{{ awards.title }}</span>
+        <span class="date">2015 - 2021</span>
+        <span>Compting Sience Graduate Fellowship, SFU</span>
       </li>
-      {% endfor %}
+      
+      <li>
+        <span class="date">2017 - 2020</span>
+        <span>Canada Graduate Scholarships PGS-D, NSERC</span>
+      </li>
+      
+      <li>
+        <span class="date">2019</span>
+        <span>DBMiner Award, SFU</span>
+      </li>
+      
+      <li>
+        <span class="date">2016</span>
+        <span>Canada Graduate Scholarships MSc Program, NSERC</span>
+      </li>
+      
+      <li>
+        <span class="date">2015</span>
+        <span>MADD-Gen MSc fellowship, SFU, NSERC</span>
+      </li>
+      
+      <li>
+        <span class="date">2014</span>
+        <span>Audrey May McCormick Scholarship, UVic</span>
+      </li>
+      
+      <li>
+        <span class="date">2013, 2014</span>
+        <span>Mrs Annie Greskiw Scholarship, UVic</span>
+      </li>
+      
+      <li>
+        <span class="date">2012 - 2015</span>
+        <span>UVic Excellence Scholarship, UVic</span>
+      </li>
+      
+      <li>
+        <span class="date">2012, 2013</span>
+        <span>Dr Ken and Barbara Thornton Memorial Award, UVic</span>
+      </li>
+      
+      <li>
+        <span class="date">2012</span>
+        <span>Steven A Huesing Memorial Entrance Scholarship, UVic</span>
+      </li>
+      
+      <li>
+        <span class="date">2012</span>
+        <span>Governor General Academic Medal, Chancellery of Honours, Canada</span>
+      </li>
+      
+      <li>
+        <span class="date">2012</span>
+        <span>Coast Capital Standing Tall Award</span>
+      </li>
+      
+      <li>
+        <span class="date">2012</span>
+        <span>Johnson Inc Sky's the Limit Scholarship</span>
+      </li>
+      
+      <li>
+        <span class="date">2010-2012</span>
+        <span>Service Award with Distinction, Byrne Creek</span>
+      </li>
+      
+      <li>
+        <span class="date">2011</span>
+        <span>National AP Scholar (Canada)</span>
+      </li>
+      
     </ul>    
   </section>
 
@@ -77,4 +923,21 @@ layout: default
   </section>
 
 </div>
+
+
+
+    </div>
+
+    <div class="frame" id="frame-foot">
+      <div class="framein" id="footer">
+        <p></p>
+      </div>
+    </div>
+
+    <script src="/js/tabs_scroll.js" type="text/javascript"></script>
+    <script src="/js/tabs_nav.js" type="text/javascript"></script>
+    <script src="/js/topbtn.js" type="text/javascript"></script>
+  </body>
+</html>
+
 
