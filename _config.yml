@@ -1,10 +1,11 @@
 layout: sidebar
-style: light
+style: dark
 
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata
   - jemoji
+  - jekyll/scholar
 
 permalink: /:year/:month/:day/:title/
 
@@ -21,12 +22,13 @@ projects:
   # sort_by options:
   #   - pushed
   #   - stars
-  limit: 9
+  limit: 30
   exclude:
     archived: false
     forks: true
     projects:
-    # - repo-name
+     - aya49
+     - aya49.github.io
 
 # social_media:
   # behance: your_username
@@ -56,3 +58,13 @@ topics:
   - name: Sass
     web_url: https://github.com/topics/sass
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+
+scholar:
+  style: modern-language-association
+  bibliography: references.bib
+  bibliography_template: bib
+  replace_strings: true
+  query: "@*"
+  sort_by: year, month
+  order: descending, descending
+  group_by: none

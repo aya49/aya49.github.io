@@ -2,15 +2,10 @@
 layout: default
 ---
 
-{% include nav_post.html %}
-    
-<div class="frame content">
-  <div class="framein tabcontent">
-
-    <section>
-      <h2>{{ page.name }}</h2>
-      {{ post_body }}
-    </section>
-
-  </div>
+<div class="framein tabcontent" id="home">
+  <section id="about">
+    <h2>{{ page.name }}</h2>
+    <p class="meta">{{ page.date | date_to_string }}</p>
+    {{ content }}
+  </section>
 </div>
