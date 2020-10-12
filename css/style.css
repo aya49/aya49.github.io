@@ -143,10 +143,19 @@ section {
   background-image: url('https://user-images.githubusercontent.com/22086811/95151190-e10ca080-073e-11eb-9dd9-a91b5c6bdfdb.png'); 
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: 650px;
-  padding-top: 280px;
+  background-size: 655px;
+  padding-bottom: 280px;
 }
 
+#footer p, #footer a {
+    font-size: 10px;
+    line-height: 1px;
+}
+
+#footer {
+  background: none;
+  text-align: center;
+}
 
 /* social links by sazzad */
 .social-links{
@@ -436,7 +445,3 @@ h3 {
   padding-bottom: 15px;
 }
 
-#footer {
-  background: none;
-  text-align: center;
-}
