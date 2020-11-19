@@ -49,7 +49,7 @@
   <nav>
     <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Home</button>
     <button class="tablinks" onclick="openCity(event, 'projects')">Projects</button>
-    <button class="tablinks" onclick="openCity(event, 'service')">Other</button>
+    <button class="tablinks" onclick="openCity(event, 'service')">Service/Awards</button>
     <div id="indicator"></div>
   </nav>
         
@@ -70,10 +70,12 @@
         
   <section class="nodate">
     <h2>Publications</h2>
-    <ol class="bibliography"><li><div class="text-justify"><span id="abeler2020high">Abeler-Dörner, Lucie, et al. “High-Throughput Phenotyping Reveals Expansive Genetic and Structural Underpinnings of Immune Variation.” <i>Nature Immunology</i>, vol. 21, no. 1, Nature Publishing Group, 2020, pp. 86–100.</span></div>
+    <ol class="bibliography"><li><div class="text-justify"><span id="abeler2020high">Abeler-Dörner, Lucie, et al. “High-Throughput Phenotyping Reveals Expansive Genetic and Structural Underpinnings of Immune Variation.” <i>Nature Immunology</i>, vol. 21, no. 1, Nature Publishing Group, 2020, pp. 86–100, doi:10.1038/s41590-019-0549-0.</span></div>
 
 <button class="button b0"  onclick="toggleBibtexabeler2020high()">Bibtex</button>
 
+
+    <a href="http://doi.org/10.1038/s41590-019-0549-0"><input class="button b1" type="button" value="doi" /></a>
 
 
 
@@ -95,7 +97,8 @@
   number = {1},
   pages = {86--100},
   year = {2020},
-  publisher = {Nature Publishing Group}
+  publisher = {Nature Publishing Group},
+  doi = {10.1038/s41590-019-0549-0}
 }
 </pre>
 </div>
@@ -109,9 +112,9 @@ function toggleBibtexabeler2020high(parameter) {
     }
 }
 </script></li>
-<li><div class="text-justify"><span id="yue2019identifying">Yue, Alice, et al. “Identifying Differential Cell Populations in Flow Cytometry Data Accounting for Marker Frequency.” <i>BioRxiv</i>, Cold Spring Harbor Laboratory, 2019, p. 837765, doi:10.1101/837765.</span></div>
+<li><div class="text-justify"><span id="yue2019automated">Yue, Alice, et al. “Automated Identification of Maximal Differential Cell Populations in Flow Cytometry Data.” <i>BioRxiv</i>, Cold Spring Harbor Laboratory, 2019, p. 837765, doi:10.1101/837765.</span></div>
 
-<button class="button b0"  onclick="toggleBibtexyue2019identifying()">Bibtex</button>
+<button class="button b0"  onclick="toggleBibtexyue2019automated()">Bibtex</button>
 
 
     <a href="http://doi.org/10.1101/837765"><input class="button b1" type="button" value="doi" /></a>
@@ -135,19 +138,54 @@ function toggleBibtexabeler2020high(parameter) {
     <a href="https://github.com/aya49/flowGraph" target="_blank"><input class="button b2" type="button" value="code" /></a>
 
 
-<div id="ayue2019identifying" style="display: none;">
-<pre>@article{yue2019identifying,
-  title = {Identifying differential cell populations in flow cytometry data accounting for marker frequency},
+<div id="ayue2019automated" style="display: none;">
+<pre>@article{yue2019automated,
+  title = {Automated identification of maximal differential cell populations in flow cytometry data},
   author = {Yue, Alice and Chauve, Cedric and Libbrecht, Maxwell and Brinkman, Ryan},
   journal = {BioRxiv},
   pages = {837765},
   year = {2019},
   publisher = {Cold Spring Harbor Laboratory},
-  website = {/2020/09/30/flowGraph/},
   doi = {10.1101/837765},
+  website = {/2020/09/30/flowGraph/},
   code = {https://github.com/aya49/flowGraph},
   slides = {https://docs.google.com/presentation/d/1rocCQnFISWXx0JLVCTAxb0YNOcIpmvUq3RPiM_TNoV4/edit?usp=sharing},
   poster = {https://docs.google.com/presentation/d/1o03ZqVq690-gHAB8AbWMNKWDvMKUYOocEHustEmZMNM/edit?usp=sharing}
+}
+</pre>
+</div>
+<script>
+function toggleBibtexyue2019automated(parameter) {
+    var x= document.getElementById('ayue2019automated');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script></li>
+<li><div class="text-justify"><span id="yue2019identifying">Yue, Alice, et al. “Identifying Differential Cell Populations in Flow Cytometry Data Accounting for Marker Frequency.” <i>Poster and Spotlight Presentation at the 14th Machine Learning in Computational Biology (MLCB) Conference, Previously a Workshohp of NeurIPS</i>, 2019.</span></div>
+
+<button class="button b0"  onclick="toggleBibtexyue2019identifying()">Bibtex</button>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<div id="ayue2019identifying" style="display: none;">
+<pre>@conference{yue2019identifying,
+  title = {Identifying differential cell populations in flow cytometry data accounting for marker frequency},
+  author = {Yue, Alice and Chauve, Cedric and Libbrecht, Maxwell and Brinkman, Ryan},
+  booktitle = {poster and spotlight presentation at the 14th Machine Learning in Computational Biology (MLCB) conference, previously a workshohp of NeurIPS},
+  year = {2019}
 }
 </pre>
 </div>
@@ -161,10 +199,12 @@ function toggleBibtexyue2019identifying(parameter) {
     }
 }
 </script></li>
-<li><div class="text-justify"><span id="cossarizza2019guidelines">Cossarizza, Andrea, et al. “Guidelines for the Use of Flow Cytometry and Cell Sorting in Immunological Studies.” <i>European Journal of Immunology</i>, vol. 49, no. 10, Wiley Online Library, 2019, pp. 1457–973.</span></div>
+<li><div class="text-justify"><span id="cossarizza2019guidelines">Cossarizza, Andrea, et al. “Guidelines for the Use of Flow Cytometry and Cell Sorting in Immunological Studies.” <i>European Journal of Immunology</i>, vol. 49, no. 10, Wiley Online Library, 2019, pp. 1457–973, doi:10.1002/eji.201970107.</span></div>
 
 <button class="button b0"  onclick="toggleBibtexcossarizza2019guidelines()">Bibtex</button>
 
+
+    <a href="http://doi.org/10.1002/eji.201970107"><input class="button b1" type="button" value="doi" /></a>
 
 
 
@@ -186,7 +226,8 @@ function toggleBibtexyue2019identifying(parameter) {
   number = {10},
   pages = {1457--1973},
   year = {2019},
-  publisher = {Wiley Online Library}
+  publisher = {Wiley Online Library},
+  doi = {10.1002/eji.201970107}
 }
 </pre>
 </div>
@@ -200,10 +241,12 @@ function toggleBibtexcossarizza2019guidelines(parameter) {
     }
 }
 </script></li>
-<li><div class="text-justify"><span id="rajasekaran2019cholinergic">Rajasekaran, Ashwini, et al. “Cholinergic Synapse Pathway Gene Polymorphisms Associated with Allergen-Induced Late Asthmatic Responses.” <i>ERJ Open Research</i>, vol. 5, no. 4, Eur Respiratory Soc, 2019.</span></div>
+<li><div class="text-justify"><span id="rajasekaran2019cholinergic">Rajasekaran, Ashwini, et al. “Cholinergic Synapse Pathway Gene Polymorphisms Associated with Allergen-Induced Late Asthmatic Responses.” <i>ERJ Open Research</i>, vol. 5, no. 4, Eur Respiratory Soc, 2019, doi:10.1183/23120541.00107-2019.</span></div>
 
 <button class="button b0"  onclick="toggleBibtexrajasekaran2019cholinergic()">Bibtex</button>
 
+
+    <a href="http://doi.org/10.1183/23120541.00107-2019"><input class="button b1" type="button" value="doi" /></a>
 
 
 
@@ -224,7 +267,8 @@ function toggleBibtexcossarizza2019guidelines(parameter) {
   volume = {5},
   number = {4},
   year = {2019},
-  publisher = {Eur Respiratory Soc}
+  publisher = {Eur Respiratory Soc},
+  doi = {10.1183/23120541.00107-2019}
 }
 </pre>
 </div>
@@ -238,10 +282,12 @@ function toggleBibtexrajasekaran2019cholinergic(parameter) {
     }
 }
 </script></li>
-<li><div class="text-justify"><span id="rahim2018high">Rahim, Albina, et al. “High Throughput Automated Analysis of Big Flow Cytometry Data.” <i>Methods</i>, vol. 134, Elsevier, 2018, pp. 164–76.</span></div>
+<li><div class="text-justify"><span id="rahim2018high">Rahim, Albina, et al. “High Throughput Automated Analysis of Big Flow Cytometry Data.” <i>Methods</i>, vol. 134, Elsevier, 2018, pp. 164–76, doi:10.1016/j.ymeth.2017.12.015.</span></div>
 
 <button class="button b0"  onclick="toggleBibtexrahim2018high()">Bibtex</button>
 
+
+    <a href="http://doi.org/10.1016/j.ymeth.2017.12.015"><input class="button b1" type="button" value="doi" /></a>
 
 
 
@@ -262,7 +308,8 @@ function toggleBibtexrajasekaran2019cholinergic(parameter) {
   volume = {134},
   pages = {164--176},
   year = {2018},
-  publisher = {Elsevier}
+  publisher = {Elsevier},
+  doi = {10.1016/j.ymeth.2017.12.015}
 }
 </pre>
 </div>
@@ -295,7 +342,7 @@ function toggleBibtexrahim2018high(parameter) {
 
 
 <div id="ayue2017feature" style="display: none;">
-<pre>@phdthesis{yue2017feature,
+<pre>@mastersthesis{yue2017feature,
   title = {Feature-based Comparison of Flow Cytometry Data},
   author = {Yue, Alice},
   year = {2017},
@@ -307,6 +354,48 @@ function toggleBibtexrahim2018high(parameter) {
 <script>
 function toggleBibtexyue2017feature(parameter) {
     var x= document.getElementById('ayue2017feature');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script></li>
+<li><div class="text-justify"><span id="cossarizza2017guidelines">Cossarizza, Andrea, et al. “Guidelines for the Use of Flow Cytometry and Cell Sorting in Immunological Studies.” <i>European Journal of Immunology</i>, vol. 47, no. 10, Wiley Online Library, 2017, pp. 1584–797, doi:10.1002/eji.201970107.</span></div>
+
+<button class="button b0"  onclick="toggleBibtexcossarizza2017guidelines()">Bibtex</button>
+
+
+    <a href="http://doi.org/10.1002/eji.201970107"><input class="button b1" type="button" value="doi" /></a>
+
+
+
+
+
+ 
+
+
+
+
+
+
+<div id="acossarizza2017guidelines" style="display: none;">
+<pre>@article{cossarizza2017guidelines,
+  title = {Guidelines for the use of flow cytometry and cell sorting in immunological studies},
+  author = {Cossarizza, Andrea and Chang, Hyun-Dong and Radbruch, Andreas and Akdis, M{\"u}beccel and Andr{\"a}, Immanuel and Annunziato, Francesco and Bacher, Petra and Barnaba, Vincenzo and Battistini, Luca and Bauer, Wolfgang M and others},
+  journal = {European journal of immunology},
+  volume = {47},
+  number = {10},
+  pages = {1584--1797},
+  year = {2017},
+  publisher = {Wiley Online Library},
+  doi = {10.1002/eji.201970107}
+}
+</pre>
+</div>
+<script>
+function toggleBibtexcossarizza2017guidelines(parameter) {
+    var x= document.getElementById('acossarizza2017guidelines');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
@@ -333,8 +422,6 @@ function toggleBibtexyue2017feature(parameter) {
 
   
 
-  
-    
   
     
       <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
@@ -414,6 +501,8 @@ function toggleBibtexyue2017feature(parameter) {
 </div>
 
       </div>
+    
+  
     
   
     
@@ -557,7 +646,7 @@ function toggleBibtexyue2017feature(parameter) {
     
     
       <a href="https://github.com/aya49/fingerprint_liveness/stargazers" class="d-inline-block link-gray mr-4">
-        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>13
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>15
       </a>
     
     
@@ -656,9 +745,9 @@ function toggleBibtexyue2017feature(parameter) {
   <div>
     <div class="d-flex flex-justify-between flex-items-start mb-1">
       <h3 class="ghtitle f4 lh-condensed mb-1">
-        <a href="https://github.com/aya49/flowtype_flowcap">
+        <a href="https://github.com/aya49/flowGraph_flowcap_old">
           <svg height="20" class="octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo octicon octicon-repo mr-1 v-align-middle" fill="#586069" aria-label="repo" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
-          flowtype_flowcap
+          flowGraph_flowcap_old
         </a>
       </h3>
     </div>
@@ -673,12 +762,12 @@ function toggleBibtexyue2017feature(parameter) {
         <span class="mr-3" itemprop="programmingLanguage">R</span>
     
     
-      <a href="https://github.com/aya49/flowtype_flowcap/stargazers" class="d-inline-block link-gray mr-4">
+      <a href="https://github.com/aya49/flowGraph_flowcap_old/stargazers" class="d-inline-block link-gray mr-4">
         <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>0
       </a>
     
     
-      <a href="https://github.com/aya49/flowtype_flowcap/network/members" class="d-inline-block link-gray mr-4">
+      <a href="https://github.com/aya49/flowGraph_flowcap_old/network/members" class="d-inline-block link-gray mr-4">
         <svg class="octicon octicon-git-branch mr-1" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>0
       </a>
     
