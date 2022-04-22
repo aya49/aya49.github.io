@@ -1,6 +1,1 @@
-Jekyll commands
-
-Run
-```
-bundle exec jekyll serve
-```
+Alice Yue's home page, under construction :3
