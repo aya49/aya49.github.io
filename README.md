@@ -1,1 +1,1 @@
-Alice Yue's home page, under construction :3
+Alice Yue's home page
