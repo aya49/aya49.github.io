@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" name="viewport" content="text/html" />
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="/css/style.css" rel="stylesheet" type="text/css">
 
@@ -14,124 +15,105 @@
     -->
 
     <title></title>
-  </head>
+</head>
 
-  <body>
+<body>
 
-  <button onclick="topFunction()" id="topbtn" title="Go to top"><i class="fa fa-chevron-up"></i></button> 
+    <button onclick="topFunction()" id="topbtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
 
+    <div class="frame" id="frame-header">
+        <div class="framein" id="header">
 
+            <a href="/"><img src="https://avatars.githubusercontent.com/u/22086811?v=4" alt="profile picture" style="border-radius: 50%; width: 150px; height: 150px;"></a>
 
-<div class="frame" id="frame-header">
-  <div class="framein" id="header">
+            <h1>Alice Yue</h1>
+            <p></p>
+            <div class="social-links">
+                <a href="https://scholar.google.com/citations?hl=en&user=NeWJef4AAAAJ" title="Google scholar" target="_blank"><i class="fa fa-google"></i></a>
+                <a href="https://www.linkedin.com/in/aliceyue/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/aya49/" title="Github" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/AliceYu82588130/" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            </div>
+            <p></p>
+            <p style="color: #fff">
+                Hi! I am a researcher <a href="https://www.metafora-biosystems.com/"><span>@Metafora</span></a>.
+            </p>
+            <p style="color: #fff">
+                I recently graduated with a PhD in the department of computing science <a href="https://www.sfu.ca/"><span>@SFU</span></a> (CGPA: 4.33/4.33) under the supervision of <a href="https://cchauve.github.io/index.html"><span>Cedric Chauve</span></a>, <a href="https://www2.cs.sfu.ca/~maxwl/"><span>Maxwell Libbrecht</span></a>, and <a href="https://www.bccrc.ca/dept/tfl/people/ryan-brinkman"><span>Ryan Brinkman</span></a>. Previously, I recieved my MSc @SFU (CGPA: 4/4.33) and my BSc with distinction <a href="https://www.uvic.ca/"><span>@UVic</span></a> (CGPA: 8.7/9.0) in the beautiful city of Victoria.
+            </p>
+            <p style="color: #fff">Resume: <a href="https://www.linkedin.com/in/aliceyue/"><span>Linkedin</span></a></p>
 
-<a href="/"><img src="https://avatars.githubusercontent.com/u/22086811?v=4" alt="profile picture" style="border-radius: 50%; width: 150px; height: 150px;"></a>
+        </div>
+    </div>
 
-<h1>Alice Yue</h1>
-<p></p>
-<div class="social-links">
-  <a href="https://scholar.google.com/citations?hl=en&user=NeWJef4AAAAJ" title="Google scholar" target="_blank"><i class="fa fa-google"></i></a>
-  <a href="https://www.linkedin.com/in/aliceyue/" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
-  <a href="https://github.com/aya49/" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-  <a href="https://twitter.com/AliceYu82588130/" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-</div>
-<p></p>
-<p style="color: #fff">
-  Hi! I am a researcher <a href="https://www.metafora-biosystems.com/"><span>@Metafora</span></a>.
-</p>  
-<p style="color: #fff">
-  I recently graduated with a PhD in the department of computing science <a href="https://www.sfu.ca/"><span>@SFU</span></a> (CGPA: 4.33/4.33) under the supervision of <a href="https://cchauve.github.io/index.html"><span>Cedric Chauve</span></a>, <a href="https://www2.cs.sfu.ca/~maxwl/"><span>Maxwell Libbrecht</span></a>, and <a href="https://www.bccrc.ca/dept/tfl/people/ryan-brinkman"><span>Ryan Brinkman</span></a>. Previously, I recieved my MSc @SFU (CGPA: 4/4.33) and my BSc with distinction <a href="https://www.uvic.ca/"><span>@UVic</span></a> (CGPA: 8.7/9.0) in the beautiful city of Victoria.
-</p>
-    <p>Resume: <a href="https://www.linkedin.com/in/aliceyue/"><span>Linkedin</span></a></p>
+    <div class="frame" id="navbar">
 
+        <nav>
+            <button class="tablinks" onclick="openCity(event, 'research')" id="defaultOpen">Research</button>
+            <button class="tablinks" onclick="openCity(event, 'teaching')">Teaching</button>
+            <button class="tablinks" onclick="openCity(event, 'service')">Other</button>
+            <div id="indicator"></div>
+        </nav>
 
-    
+    </div>
 
-  </div>
-</div>
+    <div class="frame content">
 
+        <div class="framein tabcontent" id="research">
+            <section class="nodate">
+                <h2>Research interests</h2>
+                <p align="center">
+                    I develop <b>machine learning</b>, <b>data mining</b>, and <b>statistical analysis</b> methods for high-dimensional and graph structured data. In <b>computational biology</b>, I have applied my methods on flow cytometry &#10084;, scRNAseq, and DNA sequence data.
+                </p>
+            </section>
 
-<div class="frame" id="navbar">
+            <section class="nodate">
+                <h2>Publications</h2>
+                <ol class="bibliography">
 
-  <nav>
-    <button class="tablinks" onclick="openCity(event, 'research')" id="defaultOpen">Research</button>
-    <button class="tablinks" onclick="openCity(event, 'teaching')">Teaching</button>
-    <button class="tablinks" onclick="openCity(event, 'service')">Other</button>
-    <div id="indicator"></div>
-  </nav>
-        
-</div>
+                    <li>
+                        <div class="text-justify"><span id="yue2022computational">Yue, Alice. “Computational methods for cytometry.” Applied Sciences: School of Computing Science; Simon Fraser University, 2022.</span></div>
 
-<div class="frame content">
+                        <button class="button b0" onclick="toggleBibtexyue2022computational()">Bibtex</button>
 
+                        <a href="https://raw.githubusercontent.com/aya49/MScPhD/main/Yue_Alice_301196607_PhD_Thesis_revision.pdf" target="_blank"><input class="button b1" type="button" value="pdf" /></a>
 
-<div class="framein tabcontent" id="research">
-    <section class="nodate">
-      <h2>Research interests</h2>
-        <p align="center">
-        I develop <b>machine learning</b>, <b>data mining</b>, and <b>statistical analysis</b> methods for high-dimensional and graph structured data. In <b>computational biology</b>, I have applied my methods on flow cytometry &#10084;, scRNAseq, and DNA sequence data.
-    </p>
-</section>
-
-    <section class="nodate">
-        <h2>Publications</h2>
-    <ol class="bibliography">
-      
-      <li><div class="text-justify"><span id="yue2022computational">Yue, Alice. “Computational methods for cytometry.” Applied Sciences: School of Computing Science; Simon Fraser University, 2022.</span></div>
-
-<button class="button b0"  onclick="toggleBibtexyue2022computational()">Bibtex</button>
-
-    <a href="https://raw.githubusercontent.com/aya49/MScPhD/main/Yue_Alice_301196607_PhD_Thesis_revision.pdf" target="_blank"><input class="button b1" type="button" value="pdf" /></a>
-
-
-
-
- 
-
-
-
-
-
-
-<div id="yue2022computational" style="display: none;">
-<pre>@article{yue2022computational,
+                        <div id="yue2022computational" style="display: none;">
+                            <pre>@article{yue2022computational,
   title={Computational methods for cytometry},
   author={Yue, Alice},
   year={2022},
   publisher={Simon Fraser University}
 }
 </pre>
-</div>
-<script>
-function toggleBibtexyue2022computational(parameter) {
-    var x= document.getElementById('yue2022computational');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script></li>
-      
-      <li><div class="text-justify"><span id="yue2022automated">Yue, Alice, et al. “Automated Identification of Maximal Differential Cell Populations in Flow Cytometry Data.” <i>Cytometry Part A</i>, 2022, vol. 101, no.2, doi:10.1002/cyto.a.24503.</span></div>
+                        </div>
+                        <script>
+                            function toggleBibtexyue2022computational(parameter) {
+                                var x= document.getElementById('yue2022computational');
+                                if (x.style.display === 'none') {
+                                    x.style.display = 'block';
+                                } else {
+                                    x.style.display = 'none';
+                                }
+                            }
+                        </script>
+                    </li>
 
-<button class="button b0"  onclick="toggleBibtexyue2022automated()">Bibtex</button>
+                    <li>
+                        <div class="text-justify"><span id="yue2022automated">Yue, Alice, et al. “Automated Identification of Maximal Differential Cell Populations in Flow Cytometry Data.” <i>Cytometry Part A</i>, 2022, vol. 101, no.2, doi:10.1002/cyto.a.24503.</span></div>
 
+                        <button class="button b0" onclick="toggleBibtexyue2022automated()">Bibtex</button>
 
-    <a href="https://doi.org/10.1002/cyto.a.24503"><input class="button b1" type="button" value="doi" /></a>
+                        <a href="https://doi.org/10.1002/cyto.a.24503"><input class="button b1" type="button" value="doi" /></a>
 
+                        <a href="https://docs.google.com/presentation/d/1rocCQnFISWXx0JLVCTAxb0YNOcIpmvUq3RPiM_TNoV4/edit?usp=sharing" target="_blank"><input class="button b1" type="button" value="slides" /></a>
 
-    <a href="https://docs.google.com/presentation/d/1rocCQnFISWXx0JLVCTAxb0YNOcIpmvUq3RPiM_TNoV4/edit?usp=sharing" target="_blank"><input class="button b1" type="button" value="slides" /></a>
+                        <a href="https://docs.google.com/presentation/d/1a8C_kBTECm5cG5i_VMMjw0rWmCShp-1exEgvYYSNuOY/edit?usp=sharing" target="_blank"><input class="button b1" type="button" value="poster" /></a>
 
+                        <a href="https://github.com/aya49/flowGraph" target="_blank"><input class="button b2" type="button" value="Gitlab repo" /></a>
 
-    <a href="https://docs.google.com/presentation/d/1a8C_kBTECm5cG5i_VMMjw0rWmCShp-1exEgvYYSNuOY/edit?usp=sharing" target="_blank"><input class="button b1" type="button" value="poster" /></a>
-
-
-    <a href="https://github.com/aya49/flowGraph" target="_blank"><input class="button b2" type="button" value="Gitlab repo" /></a>
-
-
-<div id="yue2022automated" style="display: none;">
-<pre>@article{yue2022automated,
+                        <div id="yue2022automated" style="display: none;">
+                            <pre>@article{yue2022automated,
   title={Automated identification of maximal differential cell populations in flow cytometry data},
   author={Yue, Alice and Chauve, Cedric and Libbrecht, Maxwell W and Brinkman, Ryan R},
   journal={Cytometry Part A},
@@ -142,37 +124,27 @@ function toggleBibtexyue2022computational(parameter) {
   publisher={Wiley Online Library}
 }
 </pre>
-</div>
-<script>
-function toggleBibtexyue2022automated(parameter) {
-    var x= document.getElementById('yue2022automated');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script></li>
-<li><div class="text-justify"><span id="abeler2020high">Abeler-Dörner, Lucie, et al. “High-Throughput Phenotyping Reveals Expansive Genetic and Structural Underpinnings of Immune Variation.” <i>Nature Immunology</i>, vol. 21, no. 1, Nature Publishing Group, 2020, pp. 86–100, doi:10.1038/s41590-019-0549-0.</span></div>
+                        </div>
+                        <script>
+                            function toggleBibtexyue2022automated(parameter) {
+                                var x= document.getElementById('yue2022automated');
+                                if (x.style.display === 'none') {
+                                    x.style.display = 'block';
+                                } else {
+                                    x.style.display = 'none';
+                                }
+                            }
+                        </script>
+                    </li>
+                    <li>
+                        <div class="text-justify"><span id="abeler2020high">Abeler-Dörner, Lucie, et al. “High-Throughput Phenotyping Reveals Expansive Genetic and Structural Underpinnings of Immune Variation.” <i>Nature Immunology</i>, vol. 21, no. 1, Nature Publishing Group, 2020, pp. 86–100, doi:10.1038/s41590-019-0549-0.</span></div>
 
-<button class="button b0"  onclick="toggleBibtexabeler2020high()">Bibtex</button>
+                        <button class="button b0" onclick="toggleBibtexabeler2020high()">Bibtex</button>
 
+                        <a href="http://doi.org/10.1038/s41590-019-0549-0"><input class="button b1" type="button" value="doi" /></a>
 
-    <a href="http://doi.org/10.1038/s41590-019-0549-0"><input class="button b1" type="button" value="doi" /></a>
-
-
-
-
-
- 
-
-
-
-
-
-
-<div id="aabeler2020high" style="display: none;">
-<pre>@article{abeler2020high,
+                        <div id="aabeler2020high" style="display: none;">
+                            <pre>@article{abeler2020high,
   title = {High-throughput phenotyping reveals expansive genetic and structural underpinnings of immune variation},
   author = {Abeler-D{\"o}rner, Lucie and Laing, Adam G and Lorenc, Anna and Ushakov, Dmitry S and Clare, Simon and Speak, Anneliese O and Duque-Correa, Maria A and White, Jacqueline K and Ramirez-Solis, Ramiro and Saran, Namita and others},
   journal = {Nature Immunology},
@@ -184,35 +156,25 @@ function toggleBibtexyue2022automated(parameter) {
   doi = {10.1038/s41590-019-0549-0}
 }
 </pre>
-</div>
-<script>
-function toggleBibtexabeler2020high(parameter) {
-    var x= document.getElementById('aabeler2020high');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script></li>
-<li><div class="text-justify"><span id="yue2019identifying">Yue, Alice, et al. “Identifying Differential Cell Populations in Flow Cytometry Data Accounting for Marker Frequency.” <i>Poster and Spotlight Presentation at the 14th Machine Learning in Computational Biology (MLCB) Conference, Previously a Workshop of NeurIPS</i>, 2019.</span></div>
+                        </div>
+                        <script>
+                            function toggleBibtexabeler2020high(parameter) {
+                                var x= document.getElementById('aabeler2020high');
+                                if (x.style.display === 'none') {
+                                    x.style.display = 'block';
+                                } else {
+                                    x.style.display = 'none';
+                                }
+                            }
+                        </script>
+                    </li>
+                    <li>
+                        <div class="text-justify"><span id="yue2019identifying">Yue, Alice, et al. “Identifying Differential Cell Populations in Flow Cytometry Data Accounting for Marker Frequency.” <i>Poster and Spotlight Presentation at the 14th Machine Learning in Computational Biology (MLCB) Conference, Previously a Workshop of NeurIPS</i>, 2019.</span></div>
 
-<button class="button b0"  onclick="toggleBibtexyue2019identifying()">Bibtex</button>
+                        <button class="button b0" onclick="toggleBibtexyue2019identifying()">Bibtex</button>
 
-
-
-
-
-
- 
-
-
-
-
-
-
-<div id="ayue2019identifying" style="display: none;">
-<pre>@conference{yue2019identifying,
+                        <div id="ayue2019identifying" style="display: none;">
+                            <pre>@conference{yue2019identifying,
   title = {Identifying differential cell populations in flow cytometry data accounting for marker frequency},
   author = {Yue, Alice and Chauve, Cedric and Libbrecht, Maxwell and Brinkman, Ryan},
   booktitle = {poster and spotlight presentation at the 14th Machine Learning in Computational Biology (MLCB) conference, previously a workshop of NeurIPS},
@@ -220,37 +182,27 @@ function toggleBibtexabeler2020high(parameter) {
   month = dec
 }
 </pre>
-</div>
-<script>
-function toggleBibtexyue2019identifying(parameter) {
-    var x= document.getElementById('ayue2019identifying');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script></li>
-<li><div class="text-justify"><span id="rajasekaran2019cholinergic">Rajasekaran, Ashwini, et al. “Cholinergic Synapse Pathway Gene Polymorphisms Associated with Allergen-Induced Late Asthmatic Responses.” <i>ERJ Open Research</i>, vol. 5, no. 4, Eur Respiratory Soc, November 2019, doi:10.1183/23120541.00107-2019.</span></div>
+                        </div>
+                        <script>
+                            function toggleBibtexyue2019identifying(parameter) {
+                                var x= document.getElementById('ayue2019identifying');
+                                if (x.style.display === 'none') {
+                                    x.style.display = 'block';
+                                } else {
+                                    x.style.display = 'none';
+                                }
+                            }
+                        </script>
+                    </li>
+                    <li>
+                        <div class="text-justify"><span id="rajasekaran2019cholinergic">Rajasekaran, Ashwini, et al. “Cholinergic Synapse Pathway Gene Polymorphisms Associated with Allergen-Induced Late Asthmatic Responses.” <i>ERJ Open Research</i>, vol. 5, no. 4, Eur Respiratory Soc, November 2019, doi:10.1183/23120541.00107-2019.</span></div>
 
-<button class="button b0"  onclick="toggleBibtexrajasekaran2019cholinergic()">Bibtex</button>
+                        <button class="button b0" onclick="toggleBibtexrajasekaran2019cholinergic()">Bibtex</button>
 
+                        <a href="http://doi.org/10.1183/23120541.00107-2019"><input class="button b1" type="button" value="doi" /></a>
 
-    <a href="http://doi.org/10.1183/23120541.00107-2019"><input class="button b1" type="button" value="doi" /></a>
-
-
-
-
-
- 
-
-
-
-
-
-
-<div id="arajasekaran2019cholinergic" style="display: none;">
-<pre>@article{rajasekaran2019cholinergic,
+                        <div id="arajasekaran2019cholinergic" style="display: none;">
+                            <pre>@article{rajasekaran2019cholinergic,
   title = {Cholinergic synapse pathway gene polymorphisms associated with allergen-induced late asthmatic responses},
   author = {Rajasekaran, Ashwini and He, Daniel and Yue, Alice and Singh, Amrit and Shannon, Casey P and FitzGerald, J Mark and Boulet, Louis-Philippe and O'Byrne, Paul M and Gauvreau, Gail M and Tebbutt, Scott J},
   journal = {ERJ open research},
@@ -262,37 +214,27 @@ function toggleBibtexyue2019identifying(parameter) {
   doi = {10.1183/23120541.00107-2019}
 }
 </pre>
-</div>
-<script>
-function toggleBibtexrajasekaran2019cholinergic(parameter) {
-    var x= document.getElementById('arajasekaran2019cholinergic');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script></li>
-<li><div class="text-justify"><span id="cossarizza2019guidelines">Cossarizza, Andrea, et al. “Guidelines for the Use of Flow Cytometry and Cell Sorting in Immunological Studies.” <i>European Journal of Immunology</i>, vol. 49, no. 10, Wiley Online Library, 2019, pp. 1457–973, doi:10.1002/eji.201970107.</span></div>
+                        </div>
+                        <script>
+                            function toggleBibtexrajasekaran2019cholinergic(parameter) {
+                                var x= document.getElementById('arajasekaran2019cholinergic');
+                                if (x.style.display === 'none') {
+                                    x.style.display = 'block';
+                                } else {
+                                    x.style.display = 'none';
+                                }
+                            }
+                        </script>
+                    </li>
+                    <li>
+                        <div class="text-justify"><span id="cossarizza2019guidelines">Cossarizza, Andrea, et al. “Guidelines for the Use of Flow Cytometry and Cell Sorting in Immunological Studies.” <i>European Journal of Immunology</i>, vol. 49, no. 10, Wiley Online Library, 2019, pp. 1457–973, doi:10.1002/eji.201970107.</span></div>
 
-<button class="button b0"  onclick="toggleBibtexcossarizza2019guidelines()">Bibtex</button>
+                        <button class="button b0" onclick="toggleBibtexcossarizza2019guidelines()">Bibtex</button>
 
+                        <a href="http://doi.org/10.1002/eji.201970107"><input class="button b1" type="button" value="doi" /></a>
 
-    <a href="http://doi.org/10.1002/eji.201970107"><input class="button b1" type="button" value="doi" /></a>
-
-
-
-
-
- 
-
-
-
-
-
-
-<div id="acossarizza2019guidelines" style="display: none;">
-<pre>@article{cossarizza2019guidelines,
+                        <div id="acossarizza2019guidelines" style="display: none;">
+                            <pre>@article{cossarizza2019guidelines,
   title = {Guidelines for the use of flow cytometry and cell sorting in immunological studies},
   author = {Cossarizza, Andrea and Chang, Hyun-Dong and Radbruch, Andreas and Acs, Andreas and Adam, Dieter and Adam-Klages, Sabine and Agace, William W and Aghaeepour, Nima and Akdis, M{\"u}beccel and Allez, Matthieu and others},
   journal = {European journal of immunology},
@@ -304,37 +246,27 @@ function toggleBibtexrajasekaran2019cholinergic(parameter) {
   doi = {10.1002/eji.201970107}
 }
 </pre>
-</div>
-<script>
-function toggleBibtexcossarizza2019guidelines(parameter) {
-    var x= document.getElementById('acossarizza2019guidelines');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script></li>
-<li><div class="text-justify"><span id="rahim2018high">Rahim, Albina, et al. “High Throughput Automated Analysis of Big Flow Cytometry Data.” <i>Methods</i>, vol. 134, Elsevier, 2018, pp. 164–76, doi:10.1016/j.ymeth.2017.12.015.</span></div>
+                        </div>
+                        <script>
+                            function toggleBibtexcossarizza2019guidelines(parameter) {
+                                var x= document.getElementById('acossarizza2019guidelines');
+                                if (x.style.display === 'none') {
+                                    x.style.display = 'block';
+                                } else {
+                                    x.style.display = 'none';
+                                }
+                            }
+                        </script>
+                    </li>
+                    <li>
+                        <div class="text-justify"><span id="rahim2018high">Rahim, Albina, et al. “High Throughput Automated Analysis of Big Flow Cytometry Data.” <i>Methods</i>, vol. 134, Elsevier, 2018, pp. 164–76, doi:10.1016/j.ymeth.2017.12.015.</span></div>
 
-<button class="button b0"  onclick="toggleBibtexrahim2018high()">Bibtex</button>
+                        <button class="button b0" onclick="toggleBibtexrahim2018high()">Bibtex</button>
 
+                        <a href="http://doi.org/10.1016/j.ymeth.2017.12.015"><input class="button b1" type="button" value="doi" /></a>
 
-    <a href="http://doi.org/10.1016/j.ymeth.2017.12.015"><input class="button b1" type="button" value="doi" /></a>
-
-
-
-
-
- 
-
-
-
-
-
-
-<div id="arahim2018high" style="display: none;">
-<pre>@article{rahim2018high,
+                        <div id="arahim2018high" style="display: none;">
+                            <pre>@article{rahim2018high,
   title = {High throughput automated analysis of big flow cytometry data},
   author = {Rahim, Albina and Meskas, Justin and Drissler, Sibyl and Yue, Alice and Lorenc, Anna and Laing, Adam and Saran, Namita and White, Jacqui and Abeler-D{\"o}rner, Lucie and Hayday, Adrian and others},
   journal = {Methods},
@@ -345,37 +277,27 @@ function toggleBibtexcossarizza2019guidelines(parameter) {
   doi = {10.1016/j.ymeth.2017.12.015}
 }
 </pre>
-</div>
-<script>
-function toggleBibtexrahim2018high(parameter) {
-    var x= document.getElementById('arahim2018high');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script></li>
-<li><div class="text-justify"><span id="yue2017feature">Yue, Alice. “Feature-Based Comparison of Flow Cytometry Data.” Applied Sciences: School of Computing Science; Simon Fraser University, 2017.</span></div>
+                        </div>
+                        <script>
+                            function toggleBibtexrahim2018high(parameter) {
+                                var x= document.getElementById('arahim2018high');
+                                if (x.style.display === 'none') {
+                                    x.style.display = 'block';
+                                } else {
+                                    x.style.display = 'none';
+                                }
+                            }
+                        </script>
+                    </li>
+                    <li>
+                        <div class="text-justify"><span id="yue2017feature">Yue, Alice. “Feature-Based Comparison of Flow Cytometry Data.” Applied Sciences: School of Computing Science; Simon Fraser University, 2017.</span></div>
 
-<button class="button b0"  onclick="toggleBibtexyue2017feature()">Bibtex</button>
+                        <button class="button b0" onclick="toggleBibtexyue2017feature()">Bibtex</button>
 
+                        <a href="http://summit.sfu.ca/system/files/iritems1/17604/etd10296_AYue.pdf" target="_blank"><input class="button b1" type="button" value="pdf" /></a>
 
-
-
-    <a href="http://summit.sfu.ca/system/files/iritems1/17604/etd10296_AYue.pdf" target="_blank"><input class="button b1" type="button" value="pdf" /></a>
-
-
-
- 
-
-
-
-
-
-
-<div id="ayue2017feature" style="display: none;">
-<pre>@mastersthesis{yue2017feature,
+                        <div id="ayue2017feature" style="display: none;">
+                            <pre>@mastersthesis{yue2017feature,
   title = {Feature-based Comparison of Flow Cytometry Data},
   author = {Yue, Alice},
   year = {2017},
@@ -383,35 +305,25 @@ function toggleBibtexrahim2018high(parameter) {
   pdf = {http://summit.sfu.ca/system/files/iritems1/17604/etd10296_AYue.pdf}
 }
 </pre>
-</div>
-<script>
-function toggleBibtexyue2017feature(parameter) {
-    var x= document.getElementById('ayue2017feature');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script></li>
-<li><div class="text-justify"><span id="cossarizza2017guidelines">Cossarizza, Andrea, et al. “Guidelines for the Use of Flow Cytometry and Cell Sorting in Immunological Studies.” <i>European Journal of Immunology</i>, vol. 47, no. 10, Wiley Online Library, 2017, pp. 1584–797.</span></div>
+                        </div>
+                        <script>
+                            function toggleBibtexyue2017feature(parameter) {
+                                var x= document.getElementById('ayue2017feature');
+                                if (x.style.display === 'none') {
+                                    x.style.display = 'block';
+                                } else {
+                                    x.style.display = 'none';
+                                }
+                            }
+                        </script>
+                    </li>
+                    <li>
+                        <div class="text-justify"><span id="cossarizza2017guidelines">Cossarizza, Andrea, et al. “Guidelines for the Use of Flow Cytometry and Cell Sorting in Immunological Studies.” <i>European Journal of Immunology</i>, vol. 47, no. 10, Wiley Online Library, 2017, pp. 1584–797.</span></div>
 
-<button class="button b0"  onclick="toggleBibtexcossarizza2017guidelines()">Bibtex</button>
+                        <button class="button b0" onclick="toggleBibtexcossarizza2017guidelines()">Bibtex</button>
 
-
-
-
-
-
- 
-
-
-
-
-
-
-<div id="acossarizza2017guidelines" style="display: none;">
-<pre>@article{cossarizza2017guidelines,
+                        <div id="acossarizza2017guidelines" style="display: none;">
+                            <pre>@article{cossarizza2017guidelines,
   title = {Guidelines for the use of flow cytometry and cell sorting in immunological studies},
   author = {Cossarizza, Andrea and Chang, Hyun-Dong and Radbruch, Andreas and Akdis, M{\"u}beccel and Andr{\"a}, Immanuel and Annunziato, Francesco and Bacher, Petra and Barnaba, Vincenzo and Battistini, Luca and Bauer, Wolfgang M and others},
   journal = {European journal of immunology},
@@ -422,198 +334,198 @@ function toggleBibtexyue2017feature(parameter) {
   publisher = {Wiley Online Library}
 }
 </pre>
-</div>
-<script>
-function toggleBibtexcossarizza2017guidelines(parameter) {
-    var x= document.getElementById('acossarizza2017guidelines');
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-    } else {
-        x.style.display = 'none';
-    }
-}
-</script></li></ol>
-  </section>
-  
-  <section>
-    <h2>Paper review</h2>
-    <p><b>Reviewed papers for</b>: ACM (2018), ISMB (2019, 2020), Neurips (2020), Oxford Bioinformatics (2016, 2020), and RECOMB (2020)</p>
-    <p><b>Committe member for</b>: MLCB (2019)</p>
-  </section>
-</div>
-        
-<div id="teaching" class="framein tabcontent">
-      <section>
-        <h2>Teaching</h2>
-          <ul>
-            <li>
-              <span class="date">Jan 2022</span>
-              <b>Instructor</b>, Automated analysis of flow cytometry data in R, Physalia
-              <span class="excerpt">
+                        </div>
+                        <script>
+                            function toggleBibtexcossarizza2017guidelines(parameter) {
+                                var x= document.getElementById('acossarizza2017guidelines');
+                                if (x.style.display === 'none') {
+                                    x.style.display = 'block';
+                                } else {
+                                    x.style.display = 'none';
+                                }
+                            }
+                        </script>
+                    </li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Paper review</h2>
+                <p><b>Reviewed papers for</b>: ACM (2018), ISMB (2019, 2020), Neurips (2020), Oxford Bioinformatics (2016, 2020), and RECOMB (2020)</p>
+                <p><b>Committe member for</b>: MLCB (2019)</p>
+            </section>
+        </div>
+
+        <div id="teaching" class="framein tabcontent">
+            <section>
+                <h2>Teaching</h2>
+                <ul>
+                    <li>
+                        <span class="date">Jan 2022</span>
+                        <b>Instructor</b>, Automated analysis of flow cytometry data in R, Physalia
+                        <span class="excerpt">
                 <p>Designed and instructed a course on analyzing flow cytometry data with R/Bioconductor via automated gating, clustering, and dimensionality reduction.</p>
                 <p>
                   <a href="https://github.com/aya49/20230116_flowcytometry_course" target="_blank"><input class="button b2" type="button" value="Course website" /></a>
                   <a href="https://www.physalia-courses.org/courses-workshops/flow-cytometry/" target="_blank"><input class="button b1" type="button" value="Physalia website" /></a>
                 </p>
               </span>
-            </li>
-            <li>
-              <span class="date">Summer 2021</span>
-              <b>Instructor</b>, CMPT 127 (computing laboratory C/C++), SFU
-              <span class="excerpt">
+                    </li>
+                    <li>
+                        <span class="date">Summer 2021</span>
+                        <b>Instructor</b>, CMPT 127 (computing laboratory C/C++), SFU
+                        <span class="excerpt">
                 <p>Delivered assignments, quizzes, and lecture material for the course.</p>
                 <p>
                   <a href="https://github.com/aya49/202105_sfu_setup_pythoncpp" target="_blank"><input class="button b2" type="button" value="Course website" /></a>
                 </p>
               </span>
-            </li>
-            <li>
-              <span class="date">Summer 2021</span>
-              <b>Contractor</b>, faculty of applied science, SFU
-              <span class="excerpt">
+                    </li>
+                    <li>
+                        <span class="date">Summer 2021</span>
+                        <b>Contractor</b>, faculty of applied science, SFU
+                        <span class="excerpt">
                 <p>Developed introductory programming material for the START program created to welcome entering undergraduate students.</p>
                 <p>
                   <a href="https://github.com/aya49/202105_sfu_cmpt_127" target="_blank"><input class="button b2" type="button" value="Programming cheatsheet" /></a>
                 </p> 
               </span>
-          </li>
-          <li>
-            <span class="date">Fall 2018</span>
-            <b>Guest lecturer</b>, CMPT 884 (data mining seminar), SFU
-            <span class="excerpt">
+                    </li>
+                    <li>
+                        <span class="date">Fall 2018</span>
+                        <b>Guest lecturer</b>, CMPT 884 (data mining seminar), SFU
+                        <span class="excerpt">
               <p>Presented research projects.</p>
             </span>
-        </li>
-        <li>
-            <span class="date">2018 - 2020</span>
-            <b>Teaching assistant</b>, faculty of applied science, SFU
-            <span class="excerpt">
+                    </li>
+                    <li>
+                        <span class="date">2018 - 2020</span>
+                        <b>Teaching assistant</b>, faculty of applied science, SFU
+                        <span class="excerpt">
               <p>Led tutorials and office hours, marked assignments and quizzes, curated student feedback.</p>
               <p><b>Courses</b>: CMPT 105 (technical writing; Fall 2019), 120 (introduction to computing science; Spring 2018, Fall 2020), and 225 (data structures; Fall 2018)</a></p> 
             </span>
-        </li>
-        <li>
-            <span class="date">2018, 2019</span>
-            <b>Mentor</b>, AI4All Invent the Future Scholars Program, SFU
-              <span class="excerpt"><p>Mentored and created projects for the bioinformatics group during the first and second annual summer enrichment program for high school girls in Canada.</p> 
+                    </li>
+                    <li>
+                        <span class="date">2018, 2019</span>
+                        <b>Mentor</b>, AI4All Invent the Future Scholars Program, SFU
+                        <span class="excerpt"><p>Mentored and created projects for the bioinformatics group during the first and second annual summer enrichment program for high school girls in Canada.</p> 
                 <p><b>Github repositories</b>: 
                   <a href="https://github.com/aya49/ai4all2018_bio" target="_blank"><input class="button b2" type="button" value="2018" /></a>
                   <a href="https://github.com/aya49/ai4all2019_bio" target="_blank"><input class="button b2" type="button" value="2019" /></a>
                 </p></span>
-          </li>
-        </ul>
-      </section>
-</div>
-<div id="service" class="framein tabcontent">
-  <section>
-    <h2>Service</h2>
-      <ul>
-        <li>
-          <span class="date">2017 - 2022</span>
-          <b>Treasurer, computing science steward</b>, TSSU (teaching support staff union), SFU
-          <span class="excerpt">
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div id="service" class="framein tabcontent">
+            <section>
+                <h2>Service</h2>
+                <ul>
+                    <li>
+                        <span class="date">2017 - 2022</span>
+                        <b>Treasurer, computing science steward</b>, TSSU (teaching support staff union), SFU
+                        <span class="excerpt">
               <p>In charge of bookkeeping (payroll, stipends, remittences, bill payments, etc.), budget creation, financial reporting, and process improvements.</p>
               <p>Acted as liason between students and the TSSU.</p> 
           </span>
-      </li>
-        <li>
-          <span class="date">2017 - 2021</span>
-          <b>President</b> (past: VP of Finance, GSS councillor, TSSU steward), Computing science graduate student association, SFU
-          <span class="excerpt"><p>Sucessfully re-initiated and created administrative structure to an inactive caucus. Provided oversight, and organized social and academic events for the student body;</p> <p>e.g. general meetings, lunch social, facuty candidate seminar lunch, game night, logo contest, amenity cleaning socials, buddy program for new students.</p><p>Acted as the liason between the school, GSS (graduate student society), TSSU, and the student body.</p> </span>
-      </li>
-    </ul>
-  </section>
+                    </li>
+                    <li>
+                        <span class="date">2017 - 2021</span>
+                        <b>President</b> (past: VP of Finance, GSS councillor, TSSU steward), Computing science graduate student association, SFU
+                        <span class="excerpt"><p>Sucessfully re-initiated and created administrative structure to an inactive caucus. Provided oversight, and organized social and academic events for the student body;</p> <p>e.g. general meetings, lunch social, facuty candidate seminar lunch, game night, logo contest, amenity cleaning socials, buddy program for new students.</p><p>Acted as the liason between the school, GSS (graduate student society), TSSU, and the student body.</p> </span>
+                    </li>
+                </ul>
+            </section>
 
-  <section>
-    <h2>Scholarships and awards</h2>
-    <ul>
-      
-      <li>
-        <span class="date">2021</span>
-        <span>Wilson Clark Graduate Scholarship, SFU</span>
-      </li>
-      
-      <li>
-        <span class="date">2015 - 2021</span>
-        <span>Compting Sience Graduate Fellowship, SFU</span>
-      </li>
-      
-      <li>
-        <span class="date">2017 - 2020</span>
-        <span>Canada Graduate Scholarships PGS-D, NSERC</span>
-      </li>
-      
-      <li>
-        <span class="date">2019</span>
-        <span>DBMiner Award, SFU</span>
-      </li>
-      
-      <li>
-        <span class="date">2016</span>
-        <span>Canada Graduate Scholarships MSc Program, NSERC</span>
-      </li>
-      
-      <li>
-        <span class="date">2015</span>
-        <span>MADD-Gen MSc fellowship, SFU, NSERC</span>
-      </li>
-      
-      <li>
-        <span class="date">2014</span>
-        <span>Audrey May McCormick Scholarship, UVic</span>
-      </li>
-      
-      <li>
-        <span class="date">2013, 2014</span>
-        <span>Mrs Annie Greskiw Scholarship, UVic</span>
-      </li>
-      
-      <li>
-        <span class="date">2012 - 2015</span>
-        <span>UVic Excellence Scholarship, UVic</span>
-      </li>
-      
-      <li>
-        <span class="date">2012, 2013</span>
-        <span>Dr Ken and Barbara Thornton Memorial Award, UVic</span>
-      </li>
-      
-      <li>
-        <span class="date">2012</span>
-        <span>Steven A Huesing Memorial Entrance Scholarship, UVic</span>
-      </li>
-      
-      <li>
-        <span class="date">2012</span>
-        <span>Governor General Academic Medal, Chancellery of Honours, Canada</span>
-      </li>
-      
-      <li>
-        <span class="date">2012</span>
-        <span>Coast Capital Standing Tall Award</span>
-      </li>
-      
-      <li>
-        <span class="date">2012</span>
-        <span>Johnson Inc Sky's the Limit Scholarship</span>
-      </li>
-      
-      <li>
-        <span class="date">2010-2012</span>
-        <span>Service Award with Distinction, Byrne Creek</span>
-      </li>
-      
-      <li>
-        <span class="date">2011</span>
-        <span>National AP Scholar (Canada)</span>
-      </li>
-      
-    </ul>    
-  </section>
+            <section>
+                <h2>Scholarships and awards</h2>
+                <ul>
 
-</div>
+                    <li>
+                        <span class="date">2021</span>
+                        <span>Wilson Clark Graduate Scholarship, SFU</span>
+                    </li>
 
+                    <li>
+                        <span class="date">2015 - 2021</span>
+                        <span>Compting Sience Graduate Fellowship, SFU</span>
+                    </li>
 
+                    <li>
+                        <span class="date">2017 - 2020</span>
+                        <span>Canada Graduate Scholarships PGS-D, NSERC</span>
+                    </li>
+
+                    <li>
+                        <span class="date">2019</span>
+                        <span>DBMiner Award, SFU</span>
+                    </li>
+
+                    <li>
+                        <span class="date">2016</span>
+                        <span>Canada Graduate Scholarships MSc Program, NSERC</span>
+                    </li>
+
+                    <li>
+                        <span class="date">2015</span>
+                        <span>MADD-Gen MSc fellowship, SFU, NSERC</span>
+                    </li>
+
+                    <li>
+                        <span class="date">2014</span>
+                        <span>Audrey May McCormick Scholarship, UVic</span>
+                    </li>
+
+                    <li>
+                        <span class="date">2013, 2014</span>
+                        <span>Mrs Annie Greskiw Scholarship, UVic</span>
+                    </li>
+
+                    <li>
+                        <span class="date">2012 - 2015</span>
+                        <span>UVic Excellence Scholarship, UVic</span>
+                    </li>
+
+                    <li>
+                        <span class="date">2012, 2013</span>
+                        <span>Dr Ken and Barbara Thornton Memorial Award, UVic</span>
+                    </li>
+
+                    <li>
+                        <span class="date">2012</span>
+                        <span>Steven A Huesing Memorial Entrance Scholarship, UVic</span>
+                    </li>
+
+                    <li>
+                        <span class="date">2012</span>
+                        <span>Governor General Academic Medal, Chancellery of Honours, Canada</span>
+                    </li>
+
+                    <li>
+                        <span class="date">2012</span>
+                        <span>Coast Capital Standing Tall Award</span>
+                    </li>
+
+                    <li>
+                        <span class="date">2012</span>
+                        <span>Johnson Inc Sky's the Limit Scholarship</span>
+                    </li>
+
+                    <li>
+                        <span class="date">2010-2012</span>
+                        <span>Service Award with Distinction, Byrne Creek</span>
+                    </li>
+
+                    <li>
+                        <span class="date">2011</span>
+                        <span>National AP Scholar (Canada)</span>
+                    </li>
+
+                </ul>
+            </section>
+
+        </div>
 
     </div>
 
@@ -623,7 +535,6 @@ function toggleBibtexcossarizza2017guidelines(parameter) {
     <script src="/js/tabs_scroll.js" type="text/javascript"></script>
     <script src="/js/tabs_nav.js" type="text/javascript"></script>
     <script src="/js/topbtn.js" type="text/javascript"></script>
-  </body>
+</body>
+
 </html>
-
-
