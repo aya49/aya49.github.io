@@ -57,12 +57,10 @@ h1 {
   margin-bottom: 10px;
   font-size: 17px;
   text-align: center;
-  font-family: 'Alice', serif;
 }
 
 h2 {
   font-size: 25px;
-  font-family: 'Alice', serif;
   color: #f4f3f0;
   background-image: url('https://user-images.githubusercontent.com/22086811/95152861-e4099000-0742-11eb-83a0-7469f9f4b82c.png');
   background-repeat: no-repeat;
@@ -131,7 +129,7 @@ section {
 
 #header {
   text-align: center;
-  color: #f7e9b5;
+  color: #e99b7a;
   background: none;
   border: none;
   margin: auto;
